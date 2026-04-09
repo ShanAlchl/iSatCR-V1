@@ -757,15 +757,15 @@ class SatelliteEnv(SatelliteSimulation):
             for reward in reversed(self.reward_sequence):
                 cumulative_reward = reward + self.discount_factor * cumulative_reward
 
-        self.print_and_save(f"current_statics: {current_statics}")
+        #self.print_and_save(f"current_statics: {current_statics}")
         self.print_and_save(f"PacketLossRate: {'{:.2%}'.format(packet_loss_rates) if packet_loss_rates is not None else 'None'}")
         self.print_and_save(f"NetworkThroughput: {network_throughput_mbps:.3f} Mbps" if network_throughput_mbps is not None else "NetworkThroughput: None")
         self.print_and_save(f"BandwidthUtilization: {'{:.2%}'.format(bandwidth_utilization) if bandwidth_utilization is not None else 'None'}")
         self.print_and_save(f"AvgPacketNodeVisits: {'{:.3f}'.format(avg_packet_node_visits) if avg_packet_node_visits is not None else 'None'}")
         self.print_and_save(f"CumulativeReward: {cumulative_reward:.6f}" if cumulative_reward is not None else "CumulativeReward: None")
         self.print_and_save(f"AverageInferenceTime: {'{:.3f} ms'.format(average_inference_time_ms) if average_inference_time_ms is not None else 'None'}")
-        self.print_and_save(f"AverageE2eDelay(Average delay for successful transmissions): {'{:.3f} seconds'.format(average_delays) if average_delays is not None else 'None'}")
-        self.print_and_save(f"AverageHopCount(Average hop count for successful transmissions): {'{:.3f} hops'.format(average_hops) if average_hops is not None else 'None'}")
+        self.print_and_save(f"AverageE2eDelay: {'{:.3f} seconds'.format(average_delays) if average_delays is not None else 'None'}")
+        self.print_and_save(f"AverageHopCount: {'{:.3f} hops'.format(average_hops) if average_hops is not None else 'None'}")
         self.print_and_save(f"AverageComputingRatio: {'{:.2%}'.format(average_computing_ratio) if average_computing_ratio is not None else 'None'}")
         self.print_and_save(f"ComputingWaitingTime: {'{:.3f} seconds'.format(average_computing_waiting_time) if average_computing_waiting_time is not None else 'None'}")
 

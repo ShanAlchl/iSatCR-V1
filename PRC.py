@@ -318,6 +318,6 @@ for k in range(rounds):
                 if 'DQN' in mode:
                     agent.target_update()
                 agent.save_model(config['agent']['model_path'])
-    if phase == 'test':
-        env.show_satellite_computing_time()
+    #if phase == 'test':
+    #    env.show_satellite_computing_time()
     begin_time = env.add_time_to_str(begin_time, skip_time)

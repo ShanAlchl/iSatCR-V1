@@ -1,5 +1,5 @@
 general:
-  phase: "train"
+  phase: "test"
   random_seed: 42
   epsilon: 0.2
   epsilon_decay: 0.999
@@ -8,7 +8,7 @@ general:
   time_stride: 1
   rounds: 1
   skip_time: !!python/tuple [60,0]
-  duration: 4000
+  duration: 500
   reward_factors: !!python/tuple [1,0.05,1,0.1,0.25]
   print_cycle: 10
   select_mode: 1
@@ -76,7 +76,7 @@ environment:
   ActionAttack_level: 0
   RewardAttack_level: 0
   StateTransferAttack_level: 0
-  ModelTampAttack_level: 4
+  ModelTampAttack_level: 0
   ExperiencePoolAttack_level: 0
   visualize: true
   PrintInfo: false
@@ -94,9 +94,9 @@ environment:
   ElevationAngle: 45
   UpdateCycle: 10
   pole: false
-  ExportPositionData: true
+  ExportPositionData: false
   PositionDataDir: "./Position_Data"
-  PositionDataCacheSize: 5
+  PositionDataCacheSize: 0
   # 0: Delta_18_24_50_1150_5.txt, 1: Delta_22_72_53_550_11.txt, 2: Delta_60_60_58_500_23.txt, 3: Star_10_16_98_600_7.txt, 4: Star_10_6_86_1100_5.txt
   ConstellationConfig: 0
   SODFilePath: "./Ground_Data/11_ground_stations.txt"
