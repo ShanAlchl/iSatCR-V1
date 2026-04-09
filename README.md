@@ -24,26 +24,26 @@ The current repository supports:
 
 ## Main Files
 
-- [PRC.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/PRC.py): main training/test entry
-- [RL_environment_for_computing.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/RL_environment_for_computing.py): RL environment wrapper and metric logging
-- [SatelliteNetworkSimulator_Computing.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/SatelliteNetworkSimulator_Computing.py): satellite network simulation core
-- [Base_Agents.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/Base_Agents.py): DQN/DDQN/PPO agent definitions
-- [Draw_Graph_Quiker.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/Draw_Graph_Quiker.py): satellite topology visualization
-- [Make_Satellite_Graph.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/Make_Satellite_Graph.py): graph construction utilities
-- [train](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/train): YAML configuration files
-- [mdp_attacks](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks): attack modules
-- [training_process_data](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/training_process_data): exported logs and metric traces
+- [PRC.py](./PRC.py): main training/test entry
+- [RL_environment_for_computing.py](./RL_environment_for_computing.py): RL environment wrapper and metric logging
+- [SatelliteNetworkSimulator_Computing.py](./SatelliteNetworkSimulator_Computing.py): satellite network simulation core
+- [Base_Agents.py](./Base_Agents.py): DQN/DDQN/PPO agent definitions
+- [Draw_Graph_Quiker.py](./Draw_Graph_Quiker.py): satellite topology visualization
+- [Make_Satellite_Graph.py](./Make_Satellite_Graph.py): graph construction utilities
+- [train](./train): YAML configuration files
+- [mdp_attacks](./mdp_attacks): attack modules
+- [training_process_data](./training_process_data): exported logs and metric traces
 
 ## Attack Modules
 
 The repository currently includes the following attack scripts:
 
-- [mdp_StateObservation_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/mdp_StateObservation_attack.py): adversarial perturbation on observed state vectors
-- [mdp_action_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/mdp_action_attack.py): tampering with executed actions
-- [mdp_Reward_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/mdp_Reward_attack.py): reward shaping/tampering before experience storage
-- [mdp_StateTransfer_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/mdp_StateTransfer_attack.py): poisoning transition tuples before replay
-- [ExperiencePool_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/ExperiencePool_attack.py): replay-buffer poisoning during update
-- [ModelTamp_attack.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/mdp_attacks/ModelTamp_attack.py): runtime model parameter tampering
+- [mdp_StateObservation_attack.py](./mdp_attacks/mdp_StateObservation_attack.py): adversarial perturbation on observed state vectors
+- [mdp_action_attack.py](./mdp_attacks/mdp_action_attack.py): tampering with executed actions
+- [mdp_Reward_attack.py](./mdp_attacks/mdp_Reward_attack.py): reward shaping/tampering before experience storage
+- [mdp_StateTransfer_attack.py](./mdp_attacks/mdp_StateTransfer_attack.py): poisoning transition tuples before replay
+- [ExperiencePool_attack.py](./mdp_attacks/ExperiencePool_attack.py): replay-buffer poisoning during update
+- [ModelTamp_attack.py](./mdp_attacks/ModelTamp_attack.py): runtime model parameter tampering
 
 The main entry script reads the following attack controls from YAML:
 
@@ -105,7 +105,7 @@ Important YAML fields:
 
 ## Output Metrics
 
-The training and test logs print the following 11 metrics once per statistics window. Their definitions below follow the actual implementation in [RL_environment_for_computing.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/RL_environment_for_computing.py).
+The training and test logs print the following 11 metrics once per statistics window. Their definitions below follow the actual implementation in [RL_environment_for_computing.py](./RL_environment_for_computing.py).
 
 - `PacketLossRate`: ratio of dropped packets to all finished packet outcomes in the current window. Lower is better.
 - `NetworkThroughput`: average end-to-end delivered traffic in the current window, reported in `Mbps`. Higher is better.
@@ -127,7 +127,7 @@ In general:
 
 ## Visualization
 
-The project includes topology visualization tools in [Draw_Graph_Quiker.py](/d:/桌面/星载智能算法安全/iSatCR/iSatCR-V1- ing - 2/Draw_Graph_Quiker.py):
+The project includes topology visualization tools in [Draw_Graph_Quiker.py](./Draw_Graph_Quiker.py):
 
 - `SatelliteVisualizer`: draws a 3D graph from Cartesian node positions
 - `SatelliteVisualizer_geo`: draws a 3D graph from latitude/longitude/altitude and overlays world boundaries
