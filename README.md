@@ -136,11 +136,13 @@ The training and test logs print the following 11 metrics once per statistics wi
 | `ComputingWaitingTime` | Average cumulative waiting time caused by computing queues per successfully delivered packet in the current window, in `seconds`. |
 | `AverageEndingReward` | Mean of the terminal or final rewards recorded in the current window. |
 
-General interpretation:
+### General Interpretation
 
-- lower is usually better for `PacketLossRate`, `AverageInferenceTime`, `AverageE2eDelay`, `AverageHopCount`, and `ComputingWaitingTime`
-- higher is usually better for `NetworkThroughput`, `CumulativeReward`, and `AverageEndingReward`
-- `BandwidthUtilization`, `AvgPacketNodeVisits`, and `AverageComputingRatio` should be interpreted together with scenario settings and traffic load
+| Trend | Metrics |
+| --- | --- |
+| Lower is usually better | `PacketLossRate`, `AverageInferenceTime`, `AverageE2eDelay`, `AverageHopCount`, `ComputingWaitingTime` |
+| Higher is usually better | `NetworkThroughput`, `CumulativeReward`, `AverageEndingReward` |
+| Scenario-dependent interpretation | `BandwidthUtilization`, `AvgPacketNodeVisits`, `AverageComputingRatio` should be interpreted together with scenario settings and traffic load |
 
 ## Visualization
 
