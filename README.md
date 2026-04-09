@@ -66,14 +66,6 @@ pip install torch numpy pyyaml networkx skyfield simpy h3 plotly geopandas shape
 
 ## Example Usage
 
-Train:
-
-```bash
-python PRC.py --config train/train_PureDDQN_dueling_shuffle.yaml
-```
-
-Test with a saved model:
-
 ```bash
 python PRC.py --config train/train_NewDDQN_dueling_shuffle.yaml
 ```
