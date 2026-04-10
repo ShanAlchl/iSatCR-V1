@@ -97,3 +97,4 @@ environment:
   ConstellationConfig: 0
   SODFilePath: "./Ground_Data/11_ground_stations.txt"
   SaveTrainingData: "train_NewPPO_shuffle.txt"
+  SaveActionLog: false

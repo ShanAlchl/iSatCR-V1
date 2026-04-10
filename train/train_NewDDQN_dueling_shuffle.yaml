@@ -1,5 +1,5 @@
 general:
-  phase: "test"
+  phase: "load"
   random_seed: 42
   epsilon: 0.2
   epsilon_decay: 0.999
@@ -8,7 +8,7 @@ general:
   time_stride: 1
   rounds: 1
   skip_time: !!python/tuple [60,0]
-  duration: 500
+  duration: 2000
   reward_factors: !!python/tuple [1,0.05,1,0.1,0.25]
   print_cycle: 10
   select_mode: 1
@@ -34,11 +34,11 @@ agent:
   learning_rate: 0.0002
   repeat: 10
   UpdateCycle: 30
-  model_path: '.\model_weights\NewDDQN_dueling_shuffle.pth'
+  model_path: 'd:\桌面\星载智能算法安全\iSatCR\model\low_2.pth'
 
 environment:
   MissionPossibility: [0.5, 0.5]
-  TrafficProfile: "medium"
+  TrafficProfile: "low"
   TrafficProfiles:
     low:
       PoissonRate: 45.0
@@ -83,13 +83,13 @@ environment:
   DelCycle: 30
   SaveLog: false
   ShowDetail: false
-  DegradedEdgeRatio: 0
-  # 被选中链路的带宽下降比例均值；1.0 等价于链路完全失效
-  EdgeBandwidthMeanDecreaseRatio: 1.0
+  DegradedEdgeRatio: 0.05
+  # 被选中链路的带宽下降比例均值；1.0等价于链路完全失效
+  EdgeBandwidthMeanDecreaseRatio: 0.4
   # 被选中链路带宽下降比例的标准差
-  EdgeBandwidthDecreaseStd: 0.0
+  EdgeBandwidthDecreaseStd: 0.1
   # 在受影响链路中完全断开的比例
-  EdgeDisconnectRatio: 0.0
+  EdgeDisconnectRatio: 0.3
   RandomNodesDel: 0
   ElevationAngle: 45
   UpdateCycle: 10
@@ -98,6 +98,7 @@ environment:
   PositionDataDir: "./Position_Data"
   PositionDataCacheSize: 0
   # 0: Delta_18_24_50_1150_5.txt, 1: Delta_22_72_53_550_11.txt, 2: Delta_60_60_58_500_23.txt, 3: Star_10_16_98_600_7.txt, 4: Star_10_6_86_1100_5.txt
-  ConstellationConfig: 0
+  ConstellationConfig: 2
   SODFilePath: "./Ground_Data/11_ground_stations.txt"
   SaveTrainingData: "train_NewDDQN_dueling_shuffle.txt"
+  SaveActionLog: false

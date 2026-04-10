@@ -93,6 +93,11 @@ python PRC.py --config train/train_NewDDQN_dueling_shuffle.yaml
 
 When using `phase: "test"` in YAML, the script loads the model specified by `agent.model_path`, sets `epsilon` to `0`, and evaluates the current policy without continuing training.
 
+When using `phase: "load"` in YAML, the script keeps the normal training loop but first checks `agent.model_path`:
+
+- if a checkpoint already exists, it loads that checkpoint and continues training from it
+- if no checkpoint exists, it initializes a new model and creates the checkpoint at `agent.model_path`
+
 ## Training and Test Configs
 
 The [`train`](./train) directory currently provides example configurations for:
@@ -112,10 +117,11 @@ Important YAML fields:
 
 | Field | Meaning |
 | --- | --- |
-| `general.phase` | `train` or `test` |
+| `general.phase` | `train`, `test`, or `load` |
 | `agent.model_path` | save or load path of the model |
 | `agent.UpdateCycle` | model save frequency during training |
 | `environment.SaveTrainingData` | log filename saved under [`training_process_data`](./training_process_data) |
+| `environment.SaveActionLog` | whether to write [`training_process_data/ActionLog.txt`](./training_process_data/ActionLog.txt); defaults to `true` |
 | attack level fields under `environment` | attack intensity controls |
 
 ## Output Metrics

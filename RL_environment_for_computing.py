@@ -17,7 +17,7 @@ class SatelliteEnv(SatelliteSimulation):
     def __init__(self,mode,select_mode,q_net,discount_factor,epsilon,reward_factors,device,MissionPossibility,PoissonRate,PacketGenerationInterval,DomputingDemandFactor,DomputingDemandFactor_2,SizeAfterComputingFactor,SizeAfterComputing_1,
                  begin_time, end_time, time_stride, tle_filepath, SODFilePath, MeanIntervalTime,memory,
                  ComputingAbility, TransmissionRate,DownlinkRate,DownstreamDelays, PacketSizeRange, PacketSizeMean, PacketSizeStd, StateUpdatePeriod, print_cycle,DelCycle, visualize=False,
-                 PrintInfo=False, SaveLog=False, ShowDetail=False,DegradedEdgeRatio=0,RandomNodesDel=0,UpdateCycle=1,SaveTrainingData=None,
+                 PrintInfo=False, SaveLog=False, ShowDetail=False,DegradedEdgeRatio=0,RandomNodesDel=0,UpdateCycle=1,SaveTrainingData=None, SaveActionLog=True,
                  ElevationAngle=45, pole=False, EdgeBandwidthMeanDecreaseRatio=1.0, EdgeBandwidthDecreaseStd=0.0, EdgeDisconnectRatio=0.0,
                  ExportPositionData=False, PositionDataDir="./Position_Data", PositionDataCacheSize=120):
         self.tracker = SatelliteTracker(tle_filepath)
@@ -76,6 +76,7 @@ class SatelliteEnv(SatelliteSimulation):
         self.iteration_counter = 0
         self.print_cycle_iterations = int(print_cycle / time_stride)
         self.SaveTrainingData=SaveTrainingData
+        self.SaveActionLog = SaveActionLog
         self.ExportPositionData = ExportPositionData
         self.PositionDataDir = PositionDataDir
         self.PositionDataCacheSize = max(int(PositionDataCacheSize), 1)
@@ -686,6 +687,8 @@ class SatelliteEnv(SatelliteSimulation):
         return value
 
     def initialize_action_log(self, begin_time):
+        if not self.SaveActionLog:
+            return
         self._ensure_parent_dir(self.action_log_path)
         mode = 'w' if not self.action_log_initialized else 'a'
         with open(self.action_log_path, mode, encoding='utf-8') as file:
@@ -693,6 +696,8 @@ class SatelliteEnv(SatelliteSimulation):
         self.action_log_initialized = True
 
     def append_action_log(self, action_logs):
+        if not self.SaveActionLog:
+            return
         if not action_logs:
             return
 

@@ -26,6 +26,14 @@ def get_current_beijing_time_str():
     return datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M:%S")
 
 
+def normalize_phase(phase_value):
+    phase = str(phase_value).strip().lower()
+    supported_phases = {'train', 'test', 'load'}
+    if phase not in supported_phases:
+        raise ValueError(f"Unsupported phase '{phase_value}'. Expected one of: {sorted(supported_phases)}")
+    return phase
+
+
 def list_constellation_tle_paths():
     satellite_data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Satellite_Data')
     tle_filepaths = sorted(
@@ -64,6 +72,23 @@ def resolve_environment_TrafficProfile(config):
     return normalized_profile
 
 
+def checkpoint_exists(agent_mode, model_path):
+    if 'PPO' in agent_mode:
+        return (
+            os.path.isfile(os.path.join(model_path, 'actor.pth'))
+            and os.path.isfile(os.path.join(model_path, 'critic.pth'))
+        )
+    return os.path.isfile(model_path)
+
+
+def ensure_model_parent_dir(agent_mode, model_path):
+    if 'PPO' in agent_mode:
+        return
+    parent_dir = os.path.dirname(model_path)
+    if parent_dir:
+        os.makedirs(parent_dir, exist_ok=True)
+
+
 args = parse_args()
 config = load_config(args.config)
 config['general']['begin_time'] = get_current_beijing_time_str()
@@ -81,7 +106,7 @@ if torch.cuda.is_available():
 from RL_environment_for_computing import SatelliteEnv
 from Base_Agents import DDQN_Agent, ShuffleEx, cal_agent_dim, PPO_Agent, DQN_Agent
 
-phase = config['general']['phase']
+phase = normalize_phase(config['general']['phase'])
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 mode = config['agent']['mode']
@@ -113,8 +138,17 @@ if mode in ['Pure_DQN', "New_DQN", "Pure_PPO","New_PPO","Weak_DQN"]:
                        learning_rate=config['agent']['learning_rate'],
                        repeat=config['agent']['repeat'],
                        shuffle_func=ShuffleEx(state_mask).shuffle if config['agent']['shuffle'] else None)
-    if phase != 'train':
-        agent.load_model(config['agent']['model_path'])
+    model_path = config['agent']['model_path']
+    if phase == 'test':
+        agent.load_model(model_path)
+    elif phase == 'load':
+        if checkpoint_exists(mode, model_path):
+            agent.load_model(model_path)
+            print(f"Load phase: resumed training from existing checkpoint at {model_path}")
+        else:
+            ensure_model_parent_dir(mode, model_path)
+            agent.save_model(model_path)
+            print(f"Load phase: no checkpoint found at {model_path}; initialized a new checkpoint there")
 else:
     agent = None
 
@@ -282,6 +316,7 @@ env = SatelliteEnv(mode=config['agent']['mode'],
                    RandomNodesDel=config['environment']['RandomNodesDel'],
                    UpdateCycle=config['environment']['UpdateCycle'],
                    SaveTrainingData=config['environment']['SaveTrainingData'],
+                   SaveActionLog=config['environment'].get('SaveActionLog', True),
                    ElevationAngle=config['environment']['ElevationAngle'],
                    pole=config['environment']['pole'],
                    EdgeBandwidthMeanDecreaseRatio=config['environment'].get('EdgeBandwidthMeanDecreaseRatio', 1.0),
@@ -300,7 +335,7 @@ epsilon = config['general']['epsilon']
 min_epsilon = config['general']['min_epsilon']
 epsilon_decay = config['general']['epsilon_decay']
 
-if phase != 'train':
+if phase == 'test':
     epsilon = 0
 
 total_steps = int(duration / time_stride)
@@ -311,7 +346,7 @@ for k in range(rounds):
         experiences = env.step(epsilon)
         if t == total_steps:
             env.render()
-        if phase == 'train' and agent:
+        if phase in {'train', 'load'} and agent:
             epsilon = max(min_epsilon, epsilon * epsilon_decay)
             agent.update(experiences)
             if (t + 1) % int(config['agent']['UpdateCycle']) == 0:
