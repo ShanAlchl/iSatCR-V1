@@ -34,7 +34,7 @@ agent:
   learning_rate: 0.0002
   repeat: 10
   UpdateCycle: 30
-  model_path: 'd:\桌面\星载智能算法安全\iSatCR\model\low_2.pth'
+  model_path: 'd:\桌面\星载智能算法安全\iSatCR\model\low_4.pth'
 
 environment:
   MissionPossibility: [0.5, 0.5]
@@ -98,7 +98,7 @@ environment:
   PositionDataDir: "./Position_Data"
   PositionDataCacheSize: 0
   # 0: Delta_18_24_50_1150_5.txt, 1: Delta_22_72_53_550_11.txt, 2: Delta_60_60_58_500_23.txt, 3: Star_10_16_98_600_7.txt, 4: Star_10_6_86_1100_5.txt
-  ConstellationConfig: 2
+  ConstellationConfig: 4
   SODFilePath: "./Ground_Data/11_ground_stations.txt"
   SaveTrainingData: "train_NewDDQN_dueling_shuffle.txt"
   SaveActionLog: false
