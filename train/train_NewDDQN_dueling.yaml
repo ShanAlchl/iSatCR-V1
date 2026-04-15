@@ -1,0 +1,101 @@
+general:
+  phase: "train"
+  random_seed: 42
+  epsilon: 0.9
+  epsilon_decay: 0.999
+  min_epsilon: 0.02
+  begin_time: "2025-12-15 00:00:00"
+  time_stride: 1
+  rounds: 1
+  skip_time: !!python/tuple [60,0]
+  duration: 6000
+  reward_factors: !!python/tuple [1,0.05,1,0.1,0.25]
+  print_cycle: 10
+  select_mode: 1
+
+
+agent:
+  mode: "New_DQN"
+  agent_sharing_mode: "shared"
+  neighbors_dim: 48
+  edges_dim: 4
+  distance_dim: 4
+  mission_dim: 6
+  current_dim: 3
+  action_dim: 5
+  hidden_dim: 256
+  buffer_length: 500000
+  batch_size: 1024
+  gamma: 0.99
+  q_mask: -1
+  activation: "LeakyRelu"
+  hidden_layers: 2
+  dueling: true
+  shuffle: false
+  learning_rate: 0.0002
+  repeat: 10
+  UpdateCycle: 30
+  model_path: '.\model_weights\NewDDQN_dueling.pth'
+
+environment:
+  MissionPossibility: [0.5, 0.5]
+  TrafficProfile: "medium"
+  TrafficProfiles:
+    low:
+      PoissonRate: 45.0
+      MeanIntervalTime: 15.0
+      PacketGenerationInterval: 4.0
+    medium:
+      PoissonRate: 30.0
+      MeanIntervalTime: 30.0
+      PacketGenerationInterval: 2.0
+    high:
+      PoissonRate: 15.0
+      MeanIntervalTime: 45.0
+      PacketGenerationInterval: 1.0
+    burst:
+      PoissonRate: 8.0
+      MeanIntervalTime: 60.0
+      PacketGenerationInterval: 0.5
+  PoissonRate: 30
+  PacketGenerationInterval: 2.0
+  DomputingDemandFactor: [150, 250]
+  DomputingDemandFactor_2: [300, 500]
+  SizeAfterComputingFactor: [0.08, 0.125]
+  SizeAfterComputing_1: !!python/float 40e3
+  MeanIntervalTime: 30
+  memory: !!python/float 12e9
+  ComputingAbility: !!python/float 50e9
+  TransmissionRate: !!python/float 1.2e9
+  DownlinkRate: !!python/float 3e9
+  DownstreamDelays: 0.0016667
+  PacketSizeRange: [!!python/float 200e6, !!python/float 600e6]
+  PacketSizeMean: 400000000
+  PacketSizeStd: !!python/float 115.47e6
+  StateUpdatePeriod: 0.1
+  StateObservationAttack_level: 0
+  ActionAttack_level: 0
+  RewardAttack_level: 0
+  StateTransferAttack_level: 0
+  ModelTampAttack_level: 0
+  visualize: true
+  PrintInfo: false
+  DelCycle: 30
+  SaveLog: false
+  ShowDetail: false
+  DegradedEdgeRatio: 0.15
+  # 被选中链路的带宽下降比例均值；1.0 等价于链路完全失效
+  EdgeBandwidthMeanDecreaseRatio: 1.0
+  # 被选中链路带宽下降比例的标准差
+  EdgeBandwidthDecreaseStd: 0.0
+  # 在受影响链路中完全断开的比例
+  EdgeDisconnectRatio: 0.0
+  RandomNodesDel: 0
+  ElevationAngle: 45
+  UpdateCycle: 10
+  pole: false
+  # 0: Delta_18_24_50_1150_5.txt, 1: Delta_22_72_53_550_11.txt, 2: Delta_60_60_58_500_23.txt, 3: Star_10_16_98_600_7.txt, 4: Star_10_6_86_1100_5.txt
+  ConstellationConfig: 0
+  SODFilePath: "./Ground_Data/11_ground_stations.txt"
+  SaveTrainingData: "train_NewDDQN_dueling.txt"
+  SaveActionLog: false
