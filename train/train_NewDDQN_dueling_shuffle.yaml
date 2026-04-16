@@ -1,14 +1,14 @@
 general:
   phase: "train"
   random_seed: 42
-  epsilon: 0.2
+  epsilon: 0.9
   epsilon_decay: 0.999
   min_epsilon: 0.02
   begin_time: "2023-10-01 00:00:00"
   time_stride: 1
   rounds: 1
   skip_time: !!python/tuple [60,0]
-  duration: 200
+  duration: 8000
   reward_factors: !!python/tuple [1,0.05,1,0.1,0.25]
   print_cycle: 10
   select_mode: 1
@@ -16,7 +16,7 @@ general:
 
 agent:
   mode: "New_DQN"
-  agent_sharing_mode: "independent"
+  agent_sharing_mode: "shared"
   bootstrap_model_path: ""
   independent_model_dir: '.\model_weights\medium_0_1_3'
   neighbors_dim: 48

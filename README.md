@@ -94,6 +94,8 @@ When using `phase: "train"` in YAML, the script keeps the normal training loop a
 
 - if a checkpoint already exists, it loads that checkpoint and continues training from it
 - if no checkpoint exists, it initializes a new model and creates the checkpoint at `agent.model_path`
+- in `shared` mode, `agent.model_path` is therefore still required even when you want to train from scratch, because it is also the save path for the newly initialized checkpoint
+- to force a fresh shared-model run, point `agent.model_path` to a new path or remove the existing checkpoint before training
 
 `phase: "load"` is still accepted as a backward-compatible alias, but it is normalized to `train`.
 
@@ -138,6 +140,63 @@ Important YAML fields:
 | `environment.SaveTrainingData` | log filename saved under [`training_process_data`](./training_process_data) |
 | `environment.SaveActionLog` | whether to write [`training_process_data/ActionLog.txt`](./training_process_data/ActionLog.txt); defaults to `true` |
 | attack level fields under `environment` | attack intensity controls |
+
+## Batch Experiments
+
+Use [`run_batch_experiments.py`](./run_batch_experiments.py) to expand parameter combinations from an `.md` file such as [`env_config.md`](./env_config.md) and run `PRC.py` sequentially.
+
+```bash
+python run_batch_experiments.py --env-md env_config.md --config train/train_NewDDQN_dueling_shuffle.yaml
+```
+
+The batch script:
+
+- parses key-value candidate lists from the markdown file
+- writes each valid combination back into the `environment` section of the selected YAML template
+- auto-generates `environment.SaveTrainingData`
+- auto-generates `agent.model_path` and `agent.independent_model_dir`
+- when `agent.agent_sharing_mode: "independent"`, auto-generates `agent.bootstrap_model_path` for a shared pretrained checkpoint with the same constellation, traffic profile, duration, batch size, and epsilon, but with `attack_none`
+- restores the original YAML file after the batch finishes or is interrupted
+
+The generated artifact names are descriptive and include both parameter names and values:
+
+- `constellation_<ConstellationConfig>`
+- `trafficprofile_<TrafficProfile>`
+- `attack_<AttackType>_level_<Level>` or `attack_none`
+- `duration_<general.duration>`
+- `batchsize_<agent.batch_size>`
+- `epsilon_<general.epsilon>`
+
+Example:
+
+```text
+constellation_0__trafficprofile_medium__attack_StateObservationAttack_level_2__duration_200__batchsize_128__epsilon_0.9.pth
+```
+
+To force every batch run to start from a brand-new checkpoint instead of resuming an existing shared model, add `--force-fresh-start`:
+
+```bash
+python run_batch_experiments.py --env-md env_config.md --config train/train_NewDDQN_dueling_shuffle.yaml --force-fresh-start
+```
+
+With `--force-fresh-start` enabled:
+
+- generated filenames still use the same parameter-based naming convention and never include timestamps
+- if `model_path`, `independent_model_dir`, or `training_process_data/<SaveTrainingData>` already exists for that parameter set, the batch script raises an error instead of overwriting or appending to old results
+- `agent.bootstrap_model_path` is rewritten to the same fresh-start `model_path` to prevent accidental bootstrap loading in `independent` mode
+- default behavior is unchanged when the flag is omitted
+
+In `independent` mode without `--force-fresh-start`, the inferred bootstrap checkpoint follows the same naming convention as the current run but replaces the attack segment with `attack_none`. For example, if the current run uses:
+
+```text
+constellation_0__trafficprofile_medium__attack_StateObservationAttack_level_2__duration_200__batchsize_128__epsilon_0.9.pth
+```
+
+then the auto-generated bootstrap path will be:
+
+```text
+constellation_0__trafficprofile_medium__attack_none__duration_200__batchsize_128__epsilon_0.9.pth
+```
 
 ## Output Metrics
 
