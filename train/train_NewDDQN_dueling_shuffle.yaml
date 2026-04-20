@@ -1,0 +1,117 @@
+general:
+  phase: train
+  random_seed: 42
+  epsilon: 0.2
+  epsilon_decay: 0.999
+  min_epsilon: 0.02
+  begin_time: '2023-10-01 00:00:00'
+  time_stride: 1
+  rounds: 1
+  skip_time: !!python/tuple
+  - 60
+  - 0
+  duration: 100
+  reward_factors: !!python/tuple
+  - 1
+  - 0.05
+  - 1
+  - 0.1
+  - 0.25
+  print_cycle: 10
+  select_mode: 1
+agent:
+  mode: New_DQN
+  agent_sharing_mode: independent
+  bootstrap_model_path: ''
+  independent_model_dir: low_medium_models\low_4_StateObservationAttack_2
+  neighbors_dim: 48
+  edges_dim: 4
+  distance_dim: 4
+  mission_dim: 6
+  current_dim: 3
+  action_dim: 5
+  hidden_dim: 256
+  buffer_length: 500000
+  batch_size: 128
+  gamma: 0.99
+  q_mask: -1
+  activation: LeakyRelu
+  hidden_layers: 2
+  dueling: true
+  shuffle: true
+  learning_rate: 0.0002
+  repeat: 10
+  UpdateCycle: 30
+  model_path: low_medium_models\low_4.pth
+environment:
+  MissionPossibility:
+  - 0.5
+  - 0.5
+  TrafficProfile: low
+  TrafficProfiles:
+    low:
+      PoissonRate: 45.0
+      MeanIntervalTime: 15.0
+      PacketGenerationInterval: 4.0
+    medium:
+      PoissonRate: 30.0
+      MeanIntervalTime: 30.0
+      PacketGenerationInterval: 2.0
+    high:
+      PoissonRate: 15.0
+      MeanIntervalTime: 45.0
+      PacketGenerationInterval: 1.0
+    burst:
+      PoissonRate: 8.0
+      MeanIntervalTime: 60.0
+      PacketGenerationInterval: 0.5
+  PoissonRate: 30
+  PacketGenerationInterval: 2.0
+  DomputingDemandFactor:
+  - 150
+  - 250
+  DomputingDemandFactor_2:
+  - 300
+  - 500
+  SizeAfterComputingFactor:
+  - 0.08
+  - 0.125
+  SizeAfterComputing_1: 40000.0
+  MeanIntervalTime: 30
+  memory: 12000000000.0
+  ComputingAbility: 50000000000.0
+  TransmissionRate: 1200000000.0
+  DownlinkRate: 3000000000.0
+  DownstreamDelays: 0.0016667
+  PacketSizeRange:
+  - 200000000.0
+  - 600000000.0
+  PacketSizeMean: 400000000
+  PacketSizeStd: 115470000.0
+  StateUpdatePeriod: 0.1
+  StateObservationAttack_level: 2
+  ActionAttack_level: 0
+  RewardAttack_level: 0
+  StateTransferAttack_level: 0
+  ModelTampAttack_level: 0
+  ExperiencePoolAttack_level: 0
+  visualize: true
+  PrintInfo: false
+  DelCycle: 30
+  SaveLog: false
+  ShowDetail: false
+  DegradedEdgeRatio: 0.05
+  EdgeBandwidthMeanDecreaseRatio: 0.4
+  EdgeBandwidthDecreaseStd: 0.1
+  EdgeDisconnectRatio: 0.3
+  RandomNodesDel: 0
+  ElevationAngle: 45
+  UpdateCycle: 10
+  pole: false
+  ExportPositionData: false
+  PositionDataDir: ./Position_Data
+  PositionDataCacheSize: 0
+  ConstellationConfig: 4
+  SODFilePath: ./Ground_Data/11_ground_stations.txt
+  SaveTrainingData: low_4_StateObservationAttack_2.txt
+  SaveActionLog: false

@@ -1,0 +1,14 @@
+ConstellationConfig:4
+DegradedEdgeRatio:0.05
+EdgeDisconnectRatio:0.3
+EdgeBandwidthMeanDecreaseRatio:0.4
+EdgeBandwidthDecreaseStd:0.1
+TrafficProfile:"low"
+PacketSizeMean:400000000
+PacketSizeStd:115.47e6
+StateObservationAttack_level:0,2
+ActionAttack_level:0
+RewardAttack_level:0
+StateTransferAttack_level:0
+ExperiencePoolAttack_level:0
+ModelTampAttack_level:0
