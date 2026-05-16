@@ -1,0 +1,71 @@
+{
+  "run_mode": "full",
+  "global": {
+    "data_root": "failure_and_attribution_analysis/full_project_runs/20260514_155731/simulation_data",
+    "output_root": "failure_and_attribution_analysis/full_project_runs/20260514_155731/analysis",
+    "archive_processed": true,
+    "archive_root": "failure_and_attribution_analysis/data_archive",
+    "random_state": 42
+  },
+  "attack_classifier": {
+    "enabled": true,
+    "model_type": "random_forest",
+    "feature_mode": "weak_scene",
+    "artifact_path": "failure_and_attribution_analysis/2.2module/attack_classifier/attack_type_classifier_weak_scene_rf_sklearn17.pkl",
+    "rf_n_estimators": 300,
+    "rf_max_depth": null,
+    "input_csv": "",
+    "output_prefix": "attack_batch_inference",
+    "use_temporal_features": true,
+    "epochs": 60,
+    "batch_size": 32,
+    "learning_rate": 0.001
+  },
+  "attribution_analysis": {
+    "enabled": true,
+    "input_csv": "",
+    "target_mode": "compare",
+    "target_field": "fused_score",
+    "targets": [
+      "total_membership_v2",
+      "decision_score_v2",
+      "fused_score"
+    ],
+    "safe_threshold": 0.3,
+    "rounds_root": "",
+    "artifact_path": "failure_and_attribution_analysis/2.2module/attribution_analysis/fail_score_contribution_model_fused_score_from_data_root.pkl"
+  },
+  "retraining": {
+    "enabled": true,
+    "auto_promote_candidate": true,
+    "registry_path": "failure_and_attribution_analysis/2.2module/model_artifacts/reports/archive_training_registry.json",
+    "candidate_root": "failure_and_attribution_analysis/2.2module/model_artifacts/candidate",
+    "production_root": "failure_and_attribution_analysis/2.2module/model_artifacts/production",
+    "history_sampling_ratio": {
+      "attack": 1.5,
+      "attribution": 2.0
+    },
+    "max_reuse_per_experiment": 3,
+    "holdout_ratio": 0.2,
+    "trigger_thresholds": {
+      "attack_new_grouped_min": 120,
+      "attack_new_attack_min": 60,
+      "attack_label_coverage_min": 4,
+      "attack_min_label_count": 12,
+      "attack_total_grouped_min": 200,
+      "attribution_new_sample_min": 150,
+      "attribution_target_unique_min": 20,
+      "attribution_constellation_coverage_min": 1,
+      "attribution_total_sample_min": 200
+    },
+    "promotion_thresholds": {
+      "attack_macro_f1_drop_max": 0.01,
+      "attack_weighted_f1_drop_max": 0.01,
+      "attack_key_recall_drop_max": 0.03,
+      "attack_macro_f1_gain_recommend": 0.02,
+      "attribution_mae_ratio_max": 1.03,
+      "attribution_rmse_ratio_max": 1.03,
+      "attribution_r2_drop_max": 0.02
+    }
+  }
+}

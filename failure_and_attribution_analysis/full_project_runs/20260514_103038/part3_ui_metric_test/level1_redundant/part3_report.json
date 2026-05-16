@@ -1,0 +1,838 @@
+{
+  "status": "completed",
+  "completed_at": "2026-05-14T11:51:24",
+  "run_root": "failure_and_attribution_analysis/full_project_runs/20260514_103038",
+  "analysis_output_root": "failure_and_attribution_analysis/full_project_runs/20260514_103038/analysis",
+  "selection_class": {
+    "healing_class": "level1_redundant",
+    "healing_level": 1,
+    "label": "Level 1 单点冗余自愈",
+    "risk_class": "low",
+    "selection_rule": "fail_score < 0.40",
+    "selection_metrics": {
+      "fail_score": 0.0,
+      "max_local_link_ratio": 0.4482758620689655,
+      "local_link_ratio_by_satellite": {
+        "Satellite_1100_1_1": 0.3684210526315789,
+        "Satellite_1100_1_10": 0.3684210526315789,
+        "Satellite_1100_1_2": 0.3684210526315789,
+        "Satellite_1100_1_3": 0.3684210526315789,
+        "Satellite_1100_1_4": 0.3684210526315789,
+        "Satellite_1100_1_5": 0.3684210526315789,
+        "Satellite_1100_2_2": 0.41379310344827586,
+        "Satellite_1100_2_4": 0.41379310344827586,
+        "Satellite_1100_3_1": 0.41379310344827586,
+        "Satellite_1100_3_2": 0.41379310344827586,
+        "Satellite_1100_3_3": 0.41379310344827586,
+        "Satellite_1100_3_4": 0.41379310344827586,
+        "Satellite_1100_3_8": 0.41379310344827586,
+        "Satellite_1100_4_1": 0.4482758620689655,
+        "Satellite_1100_4_10": 0.4482758620689655,
+        "Satellite_1100_4_4": 0.4482758620689655,
+        "Satellite_1100_4_5": 0.4482758620689655,
+        "Satellite_1100_4_6": 0.4482758620689655,
+        "Satellite_1100_4_8": 0.4482758620689655,
+        "Satellite_1100_5_5": 0.4482758620689655,
+        "Satellite_1100_5_6": 0.4482758620689655,
+        "Satellite_1100_5_8": 0.4482758620689655,
+        "Satellite_1100_6_10": 0.3684210526315789,
+        "Satellite_1100_6_2": 0.3684210526315789,
+        "Satellite_1100_6_4": 0.3684210526315789,
+        "Satellite_1100_6_5": 0.3684210526315789,
+        "Satellite_1100_6_7": 0.3684210526315789
+      },
+      "selected_satellite_count": 27,
+      "selection_rule": "fail_score < 0.40",
+      "consensus_linked_failure_ratio": 0.8888888888888888,
+      "target_warnings": []
+    }
+  },
+  "selected_scenario": {
+    "scenario_id": "full-project-round1-test2",
+    "round_index": 1,
+    "test_id": 2,
+    "constellation_id": 4,
+    "source_session_dir": "failure_and_attribution_analysis/data_archive/4/20260514_103038/current_session",
+    "performance_file": "failure_and_attribution_analysis/data_archive/4/20260514_103038/current_session/rounds/round_001/performance/test_0002_performance.txt",
+    "fail_score": 0.0,
+    "target_field": "fused_score",
+    "predicted_attack_type": "ActionAttack",
+    "attack_observations": [
+      {
+        "agent_id": "Satellite_1100_1_1",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_1_10",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_1_2",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 4
+      },
+      {
+        "agent_id": "Satellite_1100_1_3",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 3
+      },
+      {
+        "agent_id": "Satellite_1100_1_4",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_1_5",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_2_2",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_2_4",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_3_1",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_3_2",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_3_3",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_3_4",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 3
+      },
+      {
+        "agent_id": "Satellite_1100_3_8",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_4_1",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_4_10",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 2
+      },
+      {
+        "agent_id": "Satellite_1100_4_4",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_4_5",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_4_6",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_4_8",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 2
+      },
+      {
+        "agent_id": "Satellite_1100_5_5",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_5_6",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 2
+      },
+      {
+        "agent_id": "Satellite_1100_5_8",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 2
+      },
+      {
+        "agent_id": "Satellite_1100_6_10",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_6_2",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_6_4",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 1
+      },
+      {
+        "agent_id": "Satellite_1100_6_5",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 8
+      },
+      {
+        "agent_id": "Satellite_1100_6_7",
+        "attack_type_name": "RewardAttack",
+        "attack_type_id": 4,
+        "count": 3
+      }
+    ]
+  },
+  "data_contract": {
+    "failed_agent_source": "AttackSummary lines in the selected performance file",
+    "per_agent_fail_score_policy": "Main pipeline outputs scenario/test-level fail scores, not per-agent fail scores; Part3 passes the selected scenario fail score to each observed failed agent.",
+    "missing_data_policy": "No failed agents are synthesized when AttackSummary data is absent."
+  },
+  "constellation_branch": "satellite_agent",
+  "constellation2_policy": {
+    "enabled": false,
+    "region_orbit_block_size": 5,
+    "region_sat_block_size": 5,
+    "default_satellites_per_failed_agent": 5,
+    "max_satellites_per_failed_agent": 10,
+    "granularity_note": "ConstellationConfig=2 reports region-level agents; Part3 isolates only the resolved satellite subset and aggregates healing results back to the failed region agent.",
+    "agent_mapping": {}
+  },
+  "resolved_targets": {
+    "original_failed_agents": [
+      "Satellite_1100_1_1",
+      "Satellite_1100_1_10",
+      "Satellite_1100_1_2",
+      "Satellite_1100_1_3",
+      "Satellite_1100_1_4",
+      "Satellite_1100_1_5",
+      "Satellite_1100_2_2",
+      "Satellite_1100_2_4",
+      "Satellite_1100_3_1",
+      "Satellite_1100_3_2",
+      "Satellite_1100_3_3",
+      "Satellite_1100_3_4",
+      "Satellite_1100_3_8",
+      "Satellite_1100_4_1",
+      "Satellite_1100_4_10",
+      "Satellite_1100_4_4",
+      "Satellite_1100_4_5",
+      "Satellite_1100_4_6",
+      "Satellite_1100_4_8",
+      "Satellite_1100_5_5",
+      "Satellite_1100_5_6",
+      "Satellite_1100_5_8",
+      "Satellite_1100_6_10",
+      "Satellite_1100_6_2",
+      "Satellite_1100_6_4",
+      "Satellite_1100_6_5",
+      "Satellite_1100_6_7"
+    ],
+    "selected_satellite_count": 27,
+    "selected_satellites": [
+      "Satellite_1100_1_1",
+      "Satellite_1100_1_10",
+      "Satellite_1100_1_2",
+      "Satellite_1100_1_3",
+      "Satellite_1100_1_4",
+      "Satellite_1100_1_5",
+      "Satellite_1100_2_2",
+      "Satellite_1100_2_4",
+      "Satellite_1100_3_1",
+      "Satellite_1100_3_2",
+      "Satellite_1100_3_3",
+      "Satellite_1100_3_4",
+      "Satellite_1100_3_8",
+      "Satellite_1100_4_1",
+      "Satellite_1100_4_10",
+      "Satellite_1100_4_4",
+      "Satellite_1100_4_5",
+      "Satellite_1100_4_6",
+      "Satellite_1100_4_8",
+      "Satellite_1100_5_5",
+      "Satellite_1100_5_6",
+      "Satellite_1100_5_8",
+      "Satellite_1100_6_10",
+      "Satellite_1100_6_2",
+      "Satellite_1100_6_4",
+      "Satellite_1100_6_5",
+      "Satellite_1100_6_7"
+    ],
+    "observations_by_satellite": {
+      "Satellite_1100_1_1": {
+        "failed_agent_id": "Satellite_1100_1_1",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_1",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_1_10": {
+        "failed_agent_id": "Satellite_1100_1_10",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_10",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_1_2": {
+        "failed_agent_id": "Satellite_1100_1_2",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_2",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 4
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 4
+      },
+      "Satellite_1100_1_3": {
+        "failed_agent_id": "Satellite_1100_1_3",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_3",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 3
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 3
+      },
+      "Satellite_1100_1_4": {
+        "failed_agent_id": "Satellite_1100_1_4",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_4",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_1_5": {
+        "failed_agent_id": "Satellite_1100_1_5",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_1_5",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_2_2": {
+        "failed_agent_id": "Satellite_1100_2_2",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_2_2",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_2_4": {
+        "failed_agent_id": "Satellite_1100_2_4",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_2_4",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_3_1": {
+        "failed_agent_id": "Satellite_1100_3_1",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_3_1",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_3_2": {
+        "failed_agent_id": "Satellite_1100_3_2",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_3_2",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_3_3": {
+        "failed_agent_id": "Satellite_1100_3_3",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_3_3",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_3_4": {
+        "failed_agent_id": "Satellite_1100_3_4",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_3_4",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 3
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 3
+      },
+      "Satellite_1100_3_8": {
+        "failed_agent_id": "Satellite_1100_3_8",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_3_8",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_4_1": {
+        "failed_agent_id": "Satellite_1100_4_1",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_1",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_4_10": {
+        "failed_agent_id": "Satellite_1100_4_10",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_10",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 2
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 2
+      },
+      "Satellite_1100_4_4": {
+        "failed_agent_id": "Satellite_1100_4_4",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_4",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_4_5": {
+        "failed_agent_id": "Satellite_1100_4_5",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_5",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_4_6": {
+        "failed_agent_id": "Satellite_1100_4_6",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_6",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_4_8": {
+        "failed_agent_id": "Satellite_1100_4_8",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_4_8",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 2
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 2
+      },
+      "Satellite_1100_5_5": {
+        "failed_agent_id": "Satellite_1100_5_5",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_5_5",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_5_6": {
+        "failed_agent_id": "Satellite_1100_5_6",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_5_6",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 2
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 2
+      },
+      "Satellite_1100_5_8": {
+        "failed_agent_id": "Satellite_1100_5_8",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_5_8",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 2
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 2
+      },
+      "Satellite_1100_6_10": {
+        "failed_agent_id": "Satellite_1100_6_10",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_6_10",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_6_2": {
+        "failed_agent_id": "Satellite_1100_6_2",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_6_2",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_6_4": {
+        "failed_agent_id": "Satellite_1100_6_4",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_6_4",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 1
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 1
+      },
+      "Satellite_1100_6_5": {
+        "failed_agent_id": "Satellite_1100_6_5",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_6_5",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 8
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 8
+      },
+      "Satellite_1100_6_7": {
+        "failed_agent_id": "Satellite_1100_6_7",
+        "raw_observations": [
+          {
+            "agent_id": "Satellite_1100_6_7",
+            "attack_type_name": "RewardAttack",
+            "attack_type_id": 4,
+            "count": 3
+          }
+        ],
+        "fail_score": 0.0,
+        "attack_type_id": 4,
+        "attack_type_name": "RewardAttack",
+        "attack_count": 3
+      }
+    }
+  },
+  "consensus": {
+    "report_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/consensus_report.json",
+    "linked_failure_ratio": 0.8888888888888888,
+    "result_diag_count": 27
+  },
+  "simulation": {
+    "initial": {
+      "step_index": 0,
+      "current_time": "2023-10-01T00:00:00+00:00",
+      "trigger_reason": "initial",
+      "isolation_flag": false,
+      "state_changed": false,
+      "node_count": 60,
+      "edge_count": 120,
+      "isolated_nodes": [],
+      "unknown_isolation_targets": [],
+      "removed_edge_count": 0,
+      "triggered_event_ids": [],
+      "triggered_heal_flags": []
+    },
+    "isolation": {
+      "step_index": 0,
+      "current_time": "2023-10-01T00:00:00+00:00",
+      "trigger_reason": "event+state_change",
+      "isolation_flag": true,
+      "state_changed": true,
+      "node_count": 60,
+      "edge_count": 37,
+      "isolated_nodes": [
+        "Satellite_1100_1_1",
+        "Satellite_1100_1_10",
+        "Satellite_1100_1_2",
+        "Satellite_1100_1_3",
+        "Satellite_1100_1_4",
+        "Satellite_1100_1_5",
+        "Satellite_1100_2_2",
+        "Satellite_1100_2_4",
+        "Satellite_1100_3_1",
+        "Satellite_1100_3_2",
+        "Satellite_1100_3_3",
+        "Satellite_1100_3_4",
+        "Satellite_1100_3_8",
+        "Satellite_1100_4_1",
+        "Satellite_1100_4_10",
+        "Satellite_1100_4_4",
+        "Satellite_1100_4_5",
+        "Satellite_1100_4_6",
+        "Satellite_1100_4_8",
+        "Satellite_1100_5_5",
+        "Satellite_1100_5_6",
+        "Satellite_1100_5_8",
+        "Satellite_1100_6_10",
+        "Satellite_1100_6_2",
+        "Satellite_1100_6_4",
+        "Satellite_1100_6_5",
+        "Satellite_1100_6_7"
+      ],
+      "unknown_isolation_targets": [],
+      "removed_edge_count": 83,
+      "triggered_event_ids": [
+        "full-project-round1-test2:isolate"
+      ],
+      "triggered_heal_flags": [
+        false
+      ]
+    },
+    "healing_restore": {
+      "step_index": 0,
+      "current_time": "2023-10-01T00:00:00+00:00",
+      "trigger_reason": "event+state_change",
+      "isolation_flag": false,
+      "state_changed": true,
+      "node_count": 60,
+      "edge_count": 120,
+      "isolated_nodes": [],
+      "unknown_isolation_targets": [],
+      "removed_edge_count": 0,
+      "triggered_event_ids": [
+        "full-project-round1-test2:heal"
+      ],
+      "triggered_heal_flags": [
+        true
+      ]
+    }
+  },
+  "healing": {
+    "results_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/healing_results.json",
+    "success_count": 27,
+    "failed_count": 0,
+    "healing_node_count": 27,
+    "max_node_healing_time": 0.007540702819824219,
+    "max_node_healing_time_satellite": "Satellite_1100_1_5",
+    "restored_satellites": [
+      "Satellite_1100_1_1",
+      "Satellite_1100_1_10",
+      "Satellite_1100_1_2",
+      "Satellite_1100_1_3",
+      "Satellite_1100_1_4",
+      "Satellite_1100_1_5",
+      "Satellite_1100_2_2",
+      "Satellite_1100_2_4",
+      "Satellite_1100_3_1",
+      "Satellite_1100_3_2",
+      "Satellite_1100_3_3",
+      "Satellite_1100_3_4",
+      "Satellite_1100_3_8",
+      "Satellite_1100_4_1",
+      "Satellite_1100_4_10",
+      "Satellite_1100_4_4",
+      "Satellite_1100_4_5",
+      "Satellite_1100_4_6",
+      "Satellite_1100_4_8",
+      "Satellite_1100_5_5",
+      "Satellite_1100_5_6",
+      "Satellite_1100_5_8",
+      "Satellite_1100_6_10",
+      "Satellite_1100_6_2",
+      "Satellite_1100_6_4",
+      "Satellite_1100_6_5",
+      "Satellite_1100_6_7"
+    ],
+    "kept_isolated_satellites": []
+  },
+  "outputs": {
+    "report_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/part3_report.json",
+    "consensus_report_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/consensus_report.json",
+    "healing_results_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/healing_results.json",
+    "visualization_html": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_ui_metric_test/level1_redundant/self_healing_view.html"
+  },
+  "warnings": []
+}

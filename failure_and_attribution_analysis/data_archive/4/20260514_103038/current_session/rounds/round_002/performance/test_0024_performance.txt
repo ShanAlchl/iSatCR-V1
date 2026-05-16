@@ -1,0 +1,193 @@
+ROUND_INDEX: 2
+TEST_ID: 24
+SCENARIO_JSON: {"ActionAttack_level": 0, "ConstellationConfig": 4, "DegradedEdgeRatio": 0.0, "EdgeBandwidthDecreaseStd": 0.049943650592881667, "EdgeBandwidthMeanDecreaseRatio": 0.0, "EdgeDisconnectRatio": 0.0, "ExperiencePoolAttack_level": 0, "MeanIntervalTime": 15.582955190123345, "ModelTampAttack_level": 0, "PacketGenerationInterval": 3.707692455902859, "PacketSizeMean": 200921283, "PacketSizeStd": 172060623, "PoissonRate": 44.93487149562504, "RewardAttack_level": 0, "StateObservationAttack_level": 1, "StateTransferAttack_level": 0}
+RAW_LOG_NAME: closed_loop_r002_t0024.txt
+
+====== step 10 ======
+====== 2026-05-14 10:34:30 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 9.352 Mbps
+BandwidthUtilization: 0.05%
+AvgPacketNodeVisits: 5.615
+CumulativeReward: 5.963373
+AverageInferenceTime: 1.690 ms
+AverageE2eDelay: 0.999 seconds
+AverageHopCount: 5.000 hops
+AverageComputingRatio: 1.83%
+ComputingWaitingTime: 0.850 seconds
+AverageEndingReward: 0.8500748156783577
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_2, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_3, count=1
+====== step 20 ======
+====== 2026-05-14 10:34:30 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 28.201 Mbps
+BandwidthUtilization: 0.12%
+AvgPacketNodeVisits: 4.564
+CumulativeReward: 15.016878
+AverageInferenceTime: 0.460 ms
+AverageE2eDelay: 1.262 seconds
+AverageHopCount: 4.324 hops
+AverageComputingRatio: 7.33%
+ComputingWaitingTime: 1.128 seconds
+AverageEndingReward: 0.9075083623582217
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_10, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_7, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_5, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=3
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_6, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_8, count=1
+====== step 30 ======
+====== 2026-05-14 10:34:31 ======
+PacketLossRate: 2.08%
+NetworkThroughput: 60.846 Mbps
+BandwidthUtilization: 0.12%
+AvgPacketNodeVisits: 5.489
+CumulativeReward: 18.516671
+AverageInferenceTime: 0.417 ms
+AverageE2eDelay: 1.191 seconds
+AverageHopCount: 4.000 hops
+AverageComputingRatio: 9.83%
+ComputingWaitingTime: 1.092 seconds
+AverageEndingReward: 0.877903959195465
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_2, count=2
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_6, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=1
+====== step 40 ======
+====== 2026-05-14 10:34:31 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 46.492 Mbps
+BandwidthUtilization: 0.11%
+AvgPacketNodeVisits: 5.821
+CumulativeReward: 16.609023
+AverageInferenceTime: 0.408 ms
+AverageE2eDelay: 1.227 seconds
+AverageHopCount: 4.800 hops
+AverageComputingRatio: 7.17%
+ComputingWaitingTime: 1.091 seconds
+AverageEndingReward: 0.8886400258801845
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_1_2, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_1_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_2, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_6, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_8, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=1
+====== step 50 ======
+====== 2026-05-14 10:34:32 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 80.507 Mbps
+BandwidthUtilization: 0.10%
+AvgPacketNodeVisits: 5.432
+CumulativeReward: 15.159819
+AverageInferenceTime: 0.435 ms
+AverageE2eDelay: 1.414 seconds
+AverageHopCount: 4.944 hops
+AverageComputingRatio: 8.17%
+ComputingWaitingTime: 1.251 seconds
+AverageEndingReward: 0.9015243199959184
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_2, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_9, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=1
+====== step 60 ======
+====== 2026-05-14 10:34:32 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 37.702 Mbps
+BandwidthUtilization: 0.09%
+AvgPacketNodeVisits: 5.262
+CumulativeReward: 16.562010
+AverageInferenceTime: 0.388 ms
+AverageE2eDelay: 1.200 seconds
+AverageHopCount: 4.262 hops
+AverageComputingRatio: 8.00%
+ComputingWaitingTime: 1.104 seconds
+AverageEndingReward: 0.9161886471598831
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_1_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_5, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_10, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_4_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_10, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=5
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_6, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_7, count=1
+====== step 70 ======
+====== 2026-05-14 10:34:33 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 52.800 Mbps
+BandwidthUtilization: 0.14%
+AvgPacketNodeVisits: 5.200
+CumulativeReward: 16.176695
+AverageInferenceTime: 0.441 ms
+AverageE2eDelay: 1.422 seconds
+AverageHopCount: 4.048 hops
+AverageComputingRatio: 7.67%
+ComputingWaitingTime: 1.288 seconds
+AverageEndingReward: 0.8812648852975882
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_1, count=2
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_9, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_5, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_4, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=3
+====== step 80 ======
+====== 2026-05-14 10:34:34 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 105.501 Mbps
+BandwidthUtilization: 0.12%
+AvgPacketNodeVisits: 4.923
+CumulativeReward: 14.572119
+AverageInferenceTime: 0.456 ms
+AverageE2eDelay: 1.075 seconds
+AverageHopCount: 3.750 hops
+AverageComputingRatio: 4.17%
+ComputingWaitingTime: 0.912 seconds
+AverageEndingReward: 0.8748119001499407
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_4_10, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_8, count=1
+====== step 90 ======
+====== 2026-05-14 10:34:35 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 87.713 Mbps
+BandwidthUtilization: 0.12%
+AvgPacketNodeVisits: 4.421
+CumulativeReward: 15.702234
+AverageInferenceTime: 0.445 ms
+AverageE2eDelay: 1.205 seconds
+AverageHopCount: 3.853 hops
+AverageComputingRatio: 7.17%
+ComputingWaitingTime: 1.079 seconds
+AverageEndingReward: 0.8809226572513771
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_1_5, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_2_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_1, count=3
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_3_10, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_4_1, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_6, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_8, count=1
+====== step 100 ======
+====== 2026-05-14 10:34:36 ======
+PacketLossRate: 0.00%
+NetworkThroughput: 98.914 Mbps
+BandwidthUtilization: 0.14%
+AvgPacketNodeVisits: 6.323
+CumulativeReward: 13.508369
+AverageInferenceTime: 0.466 ms
+AverageE2eDelay: 1.408 seconds
+AverageHopCount: 4.639 hops
+AverageComputingRatio: 5.67%
+ComputingWaitingTime: 1.238 seconds
+AverageEndingReward: 0.9018407489362656
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_3, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_5_5, count=1
+AttackSummary: type=StateObservationAttack, satellite=Satellite_1100_6_5, count=1

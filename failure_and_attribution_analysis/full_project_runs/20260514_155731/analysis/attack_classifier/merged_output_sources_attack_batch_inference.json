@@ -1,0 +1,11 @@
+{
+  "merged_output_summary": "failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attack_classifier\\merged_output_summary_attack_batch_inference.txt",
+  "sources": [
+    {
+      "source_file_index": 0,
+      "source_output_summary_path": "failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\simulation_data\\4\\20260514_155731\\current_session\\output_summary.txt",
+      "source_session_dir": "failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\simulation_data\\4\\20260514_155731\\current_session",
+      "source_session_id": "session_0000"
+    }
+  ]
+}

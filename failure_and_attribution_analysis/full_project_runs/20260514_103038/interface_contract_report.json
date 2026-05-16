@@ -1,0 +1,244 @@
+{
+  "simulation": {
+    "stage": "simulation_to_analysis",
+    "status": "passed",
+    "analysis_subject": "agent",
+    "satellite_detail_policy": "ignored: downstream analysis consumes scenario/test-level metrics and does not read AttackSummary satellite lines or ActionLog satellite traces",
+    "configured_constellation_id": 4,
+    "detected_constellation_configs": [
+      4
+    ],
+    "constellation2_agent_scope": "not_applicable",
+    "configured_constellation_detected": true,
+    "session_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\simulation_data\\4\\20260514_103038\\current_session",
+    "rounds_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\simulation_data\\4\\20260514_103038\\current_session\\rounds",
+    "output_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\simulation_data\\4\\20260514_103038\\current_session\\output_summary.txt",
+    "round_evalu_count": 9,
+    "env_list_file_count": 9,
+    "failure_scores_file_count": 9,
+    "step_record_count_for_attack_classifier": 1290,
+    "test_sample_count": 129,
+    "test_summary_count_for_attribution": 129,
+    "step_eval_count": 1290,
+    "required_scenario_fields": [
+      "ConstellationConfig",
+      "DegradedEdgeRatio",
+      "EdgeDisconnectRatio",
+      "EdgeBandwidthMeanDecreaseRatio",
+      "EdgeBandwidthDecreaseStd",
+      "PoissonRate",
+      "MeanIntervalTime",
+      "PacketGenerationInterval",
+      "PacketSizeMean",
+      "PacketSizeStd",
+      "StateObservationAttack_level",
+      "ActionAttack_level",
+      "StateTransferAttack_level",
+      "RewardAttack_level",
+      "ExperiencePoolAttack_level",
+      "ModelTampAttack_level"
+    ],
+    "required_metric_fields": [
+      "PacketLossRate",
+      "NetworkThroughput",
+      "BandwidthUtilization",
+      "AvgPacketNodeVisits",
+      "CumulativeReward",
+      "AverageInferenceTime",
+      "AverageE2eDelay",
+      "AverageHopCount",
+      "AverageComputingRatio",
+      "ComputingWaitingTime",
+      "AverageEndingReward"
+    ],
+    "attribution_target_field": "fused_score"
+  },
+  "analysis": {
+    "stage": "analysis_outputs",
+    "status": "passed",
+    "pipeline_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\analysis\\pipeline_summary.json",
+    "integrated_results_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\analysis\\integrated_attack_attribution_results.jsonl",
+    "integrated_row_count": 129,
+    "attack_enabled": true,
+    "attack_sample_count": 129,
+    "attribution_enabled": true,
+    "attribution_sample_count": 129,
+    "integrated_results": {
+      "output_jsonl": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\analysis\\integrated_attack_attribution_results.jsonl",
+      "sample_count": 129,
+      "matched_count": 129,
+      "attack_only_count": 0,
+      "attribution_only_count": 0
+    },
+    "archive_summary": {
+      "enabled": true,
+      "archive_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive",
+      "attempted_count": 1,
+      "archived_count": 1,
+      "skipped_due_to_collision_count": 0,
+      "skipped_invalid_source_count": 0,
+      "archived_dirs": [
+        {
+          "source_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\simulation_data\\4\\20260514_103038",
+          "target_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_103038"
+        }
+      ],
+      "skipped_due_to_collision": [],
+      "skipped_invalid_source": []
+    },
+    "retraining_summary": {
+      "enabled": true,
+      "reason": "failed",
+      "summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\reports\\20260514_105154\\candidate_retrain_summary.json",
+      "threshold_gate_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\reports\\20260514_105154\\threshold_gate_summary.json",
+      "run_id": "20260514_105154",
+      "candidate_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\candidate",
+      "error_type": "CalledProcessError",
+      "return_code": 1,
+      "command": [
+        "F:\\part1-2-3+train2\\part1-2-3\\.venv\\Scripts\\python.exe",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\run_candidate_retraining.py",
+        "--config",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\runtime_pipeline_config.jsonc",
+        "--pipeline-summary",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\analysis\\pipeline_summary.json",
+        "--attack-artifact",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attack_classifier\\attack_type_classifier_weak_scene_rf_sklearn17.pkl",
+        "--attribution-artifact",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attribution_analysis\\fail_score_contribution_model_fused_score_from_data_root.pkl",
+        "--summary-output",
+        "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\reports\\20260514_105154\\candidate_retrain_summary.json",
+        "--run-id",
+        "20260514_105154"
+      ]
+    }
+  },
+  "part3_rebuild": {
+    "stage": "part3_rebuild_self_healing",
+    "status": "completed",
+    "report_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_103038\\part3_rebuild\\part3_report.json",
+    "outputs": {
+      "report_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_rebuild/part3_report.json",
+      "consensus_report_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_rebuild/consensus_report.json",
+      "healing_results_json": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_rebuild/healing_results.json",
+      "visualization_html": "failure_and_attribution_analysis/full_project_runs/20260514_103038/part3_rebuild/self_healing_view.html"
+    },
+    "selected_scenario": {
+      "scenario_id": "full-project-round8-test125",
+      "round_index": 8,
+      "test_id": 125,
+      "constellation_id": 4,
+      "source_session_dir": "failure_and_attribution_analysis/data_archive/4/20260514_103038/current_session",
+      "performance_file": "failure_and_attribution_analysis/data_archive/4/20260514_103038/current_session/rounds/round_008/performance/test_0125_performance.txt",
+      "fail_score": 0.9975318908691406,
+      "target_field": "fused_score",
+      "predicted_attack_type": "ActionAttack",
+      "attack_observations": [
+        {
+          "agent_id": "Satellite_1100_1_10",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_1_4",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_1_7",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_1_8",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_2_2",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_2_3",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_3_1",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_3_6",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 2
+        },
+        {
+          "agent_id": "Satellite_1100_4_1",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_4_10",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 3
+        },
+        {
+          "agent_id": "Satellite_1100_4_4",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_5_3",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_5_5",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 3
+        },
+        {
+          "agent_id": "Satellite_1100_5_9",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 2
+        },
+        {
+          "agent_id": "Satellite_1100_6_3",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_6_4",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        },
+        {
+          "agent_id": "Satellite_1100_6_7",
+          "attack_type_name": "RewardAttack",
+          "attack_type_id": 4,
+          "count": 1
+        }
+      ]
+    },
+    "constellation_branch": "satellite_agent",
+    "warnings": []
+  }
+}

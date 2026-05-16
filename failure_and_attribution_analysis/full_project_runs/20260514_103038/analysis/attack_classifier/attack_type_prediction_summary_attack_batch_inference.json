@@ -1,0 +1,89 @@
+{
+  "sample_count": 129,
+  "artifact_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attack_classifier\\attack_type_classifier_weak_scene_rf_sklearn17.pkl",
+  "model_type": "random_forest",
+  "feature_mode": "weak_scene",
+  "metrics": {
+    "accuracy": 0.8837209302325582,
+    "macro_precision": 0.9208909370199693,
+    "macro_recall": 0.8044363199825385,
+    "macro_f1": 0.8443842314253637,
+    "weighted_precision": 0.9150204217721097,
+    "weighted_recall": 0.8837209302325582,
+    "weighted_f1": 0.8873889712179005,
+    "confusion_matrix": [
+      [
+        53,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        19,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        7
+      ]
+    ],
+    "labels": [
+      "NoAttack",
+      "StateObservationAttack",
+      "ActionAttack",
+      "StateTransferAttack",
+      "RewardAttack",
+      "ExperiencePoolAttack",
+      "ModelTampAttack"
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "sample_count": 129,
+  "artifact_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attribution_analysis\\fail_score_contribution_model_fused_score_from_data_root.pkl",
+  "target_field": "fused_score",
+  "target_mean": 0.06307685095006937,
+  "predicted_mean": 0.21057647023778808,
+  "mean_absolute_error": 0.2001290667321649,
+  "feature_names": [
+    "ConstellationConfig",
+    "DegradedEdgeRatio",
+    "EdgeDisconnectRatio",
+    "EdgeBandwidthMeanDecreaseRatio",
+    "EdgeBandwidthDecreaseStd",
+    "PoissonRate",
+    "MeanIntervalTime",
+    "PacketGenerationInterval",
+    "PacketSizeMean",
+    "PacketSizeStd",
+    "StateObservationAttack_level",
+    "ActionAttack_level",
+    "StateTransferAttack_level",
+    "RewardAttack_level",
+    "ExperiencePoolAttack_level",
+    "ModelTampAttack_level"
+  ],
+  "global_mean_contribution_list": [
+    0.21589710561143982,
+    0.09580579346530493,
+    0.07331198904658809,
+    0.07120574149414005,
+    0.055168729448024964,
+    0.03788555559251559,
+    0.04900017369836279,
+    0.043205622582997955,
+    0.08304118464016375,
+    0.0494168897935637,
+    0.04213793088050899,
+    0.05730833130672227,
+    0.0318694644669076,
+    0.023584703237861777,
+    0.03203965525020258,
+    0.03912112948469521
+  ],
+  "global_mean_contribution_by_feature": {
+    "ConstellationConfig": 0.21589710561143982,
+    "DegradedEdgeRatio": 0.09580579346530493,
+    "EdgeDisconnectRatio": 0.07331198904658809,
+    "EdgeBandwidthMeanDecreaseRatio": 0.07120574149414005,
+    "EdgeBandwidthDecreaseStd": 0.055168729448024964,
+    "PoissonRate": 0.03788555559251559,
+    "MeanIntervalTime": 0.04900017369836279,
+    "PacketGenerationInterval": 0.043205622582997955,
+    "PacketSizeMean": 0.08304118464016375,
+    "PacketSizeStd": 0.0494168897935637,
+    "StateObservationAttack_level": 0.04213793088050899,
+    "ActionAttack_level": 0.05730833130672227,
+    "StateTransferAttack_level": 0.0318694644669076,
+    "RewardAttack_level": 0.023584703237861777,
+    "ExperiencePoolAttack_level": 0.03203965525020258,
+    "ModelTampAttack_level": 0.03912112948469521
+  },
+  "global_ranked_features": [
+    {
+      "feature_name": "ConstellationConfig",
+      "mean_contribution": 0.21589710561143982,
+      "rank": 1
+    },
+    {
+      "feature_name": "DegradedEdgeRatio",
+      "mean_contribution": 0.09580579346530493,
+      "rank": 2
+    },
+    {
+      "feature_name": "PacketSizeMean",
+      "mean_contribution": 0.08304118464016375,
+      "rank": 3
+    },
+    {
+      "feature_name": "EdgeDisconnectRatio",
+      "mean_contribution": 0.07331198904658809,
+      "rank": 4
+    },
+    {
+      "feature_name": "EdgeBandwidthMeanDecreaseRatio",
+      "mean_contribution": 0.07120574149414005,
+      "rank": 5
+    },
+    {
+      "feature_name": "ActionAttack_level",
+      "mean_contribution": 0.05730833130672227,
+      "rank": 6
+    },
+    {
+      "feature_name": "EdgeBandwidthDecreaseStd",
+      "mean_contribution": 0.055168729448024964,
+      "rank": 7
+    },
+    {
+      "feature_name": "PacketSizeStd",
+      "mean_contribution": 0.0494168897935637,
+      "rank": 8
+    },
+    {
+      "feature_name": "MeanIntervalTime",
+      "mean_contribution": 0.04900017369836279,
+      "rank": 9
+    },
+    {
+      "feature_name": "PacketGenerationInterval",
+      "mean_contribution": 0.043205622582997955,
+      "rank": 10
+    },
+    {
+      "feature_name": "StateObservationAttack_level",
+      "mean_contribution": 0.04213793088050899,
+      "rank": 11
+    },
+    {
+      "feature_name": "ModelTampAttack_level",
+      "mean_contribution": 0.03912112948469521,
+      "rank": 12
+    },
+    {
+      "feature_name": "PoissonRate",
+      "mean_contribution": 0.03788555559251559,
+      "rank": 13
+    },
+    {
+      "feature_name": "ExperiencePoolAttack_level",
+      "mean_contribution": 0.03203965525020258,
+      "rank": 14
+    },
+    {
+      "feature_name": "StateTransferAttack_level",
+      "mean_contribution": 0.0318694644669076,
+      "rank": 15
+    },
+    {
+      "feature_name": "RewardAttack_level",
+      "mean_contribution": 0.023584703237861777,
+      "rank": 16
+    }
+  ],
+  "model_metadata": {
+    "safe_threshold": 0.3,
+    "steps": 50,
+    "epsilon": 0.0001,
+    "model_fitted": true,
+    "constant_fail_score": null
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "run_id": "20260514_161952",
+  "attack_classifier": {
+    "triggered": false,
+    "skip_reasons": [
+      "attack_min_label_count_below_threshold"
+    ],
+    "threshold_checks": [
+      {
+        "name": "attack_new_grouped_min",
+        "actual": 129,
+        "threshold": 120,
+        "passed": true
+      },
+      {
+        "name": "attack_new_attack_min",
+        "actual": 73,
+        "threshold": 60,
+        "passed": true
+      },
+      {
+        "name": "attack_label_coverage_min",
+        "actual": 7,
+        "threshold": 4,
+        "passed": true
+      },
+      {
+        "name": "attack_min_label_count",
+        "actual": 7,
+        "threshold": 12,
+        "passed": false
+      },
+      {
+        "name": "attack_total_grouped_min",
+        "actual": 258,
+        "threshold": 200,
+        "passed": true
+      }
+    ]
+  },
+  "attribution_analysis": {
+    "triggered": false,
+    "skip_reasons": [
+      "attribution_new_sample_below_threshold"
+    ],
+    "threshold_checks": [
+      {
+        "name": "attribution_new_sample_min",
+        "actual": 129,
+        "threshold": 150,
+        "passed": false
+      },
+      {
+        "name": "attribution_target_unique_min",
+        "actual": 47,
+        "threshold": 20,
+        "passed": true
+      },
+      {
+        "name": "attribution_target_is_not_constant",
+        "actual": true,
+        "threshold": true,
+        "passed": true
+      },
+      {
+        "name": "attribution_constellation_coverage_min",
+        "actual": 1,
+        "threshold": 1,
+        "passed": true
+      },
+      {
+        "name": "attribution_total_sample_min",
+        "actual": 258,
+        "threshold": 200,
+        "passed": true
+      }
+    ]
+  }
+}

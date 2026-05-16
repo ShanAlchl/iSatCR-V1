@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "attack_classifier": {
+    "evaluated": false,
+    "promoted": false,
+    "reasons": []
+  },
+  "attribution_analysis": {
+    "evaluated": false,
+    "promoted": false,
+    "reasons": []
+  }
+}

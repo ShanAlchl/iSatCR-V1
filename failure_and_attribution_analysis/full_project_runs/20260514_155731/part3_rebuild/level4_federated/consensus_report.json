@@ -1,0 +1,457 @@
+{
+  "scenario_id": "full-project-round6-test89",
+  "linked_failure_ratio": 0.975,
+  "constellation_tle_path": "online_self_healing/Satellite_Data/Star_6_10_86_1100_5.txt",
+  "satellite_records": [
+    {
+      "SID": "Satellite_1100_1_2",
+      "RawSID": "Satellite_1100_1_2",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_3",
+      "RawSID": "Satellite_1100_1_3",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_4",
+      "RawSID": "Satellite_1100_1_4",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_5",
+      "RawSID": "Satellite_1100_1_5",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_6",
+      "RawSID": "Satellite_1100_1_6",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_7",
+      "RawSID": "Satellite_1100_1_7",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_8",
+      "RawSID": "Satellite_1100_1_8",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_9",
+      "RawSID": "Satellite_1100_1_9",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_10",
+      "RawSID": "Satellite_1100_1_10",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_1",
+      "RawSID": "Satellite_1100_2_1",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_2",
+      "RawSID": "Satellite_1100_2_2",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_3",
+      "RawSID": "Satellite_1100_2_3",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_6",
+      "RawSID": "Satellite_1100_2_6",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_9",
+      "RawSID": "Satellite_1100_2_9",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_10",
+      "RawSID": "Satellite_1100_2_10",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_1",
+      "RawSID": "Satellite_1100_3_1",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_2",
+      "RawSID": "Satellite_1100_3_2",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_3",
+      "RawSID": "Satellite_1100_3_3",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_7",
+      "RawSID": "Satellite_1100_3_7",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_8",
+      "RawSID": "Satellite_1100_3_8",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_10",
+      "RawSID": "Satellite_1100_3_10",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_1",
+      "RawSID": "Satellite_1100_4_1",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_2",
+      "RawSID": "Satellite_1100_4_2",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_4",
+      "RawSID": "Satellite_1100_4_4",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_5",
+      "RawSID": "Satellite_1100_4_5",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_6",
+      "RawSID": "Satellite_1100_4_6",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_7",
+      "RawSID": "Satellite_1100_4_7",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_10",
+      "RawSID": "Satellite_1100_4_10",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_2",
+      "RawSID": "Satellite_1100_5_2",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": false
+    },
+    {
+      "SID": "Satellite_1100_5_4",
+      "RawSID": "Satellite_1100_5_4",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_5",
+      "RawSID": "Satellite_1100_5_5",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_7",
+      "RawSID": "Satellite_1100_5_7",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_8",
+      "RawSID": "Satellite_1100_5_8",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_9",
+      "RawSID": "Satellite_1100_5_9",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_1",
+      "RawSID": "Satellite_1100_6_1",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_4",
+      "RawSID": "Satellite_1100_6_4",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_5",
+      "RawSID": "Satellite_1100_6_5",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_6",
+      "RawSID": "Satellite_1100_6_6",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_8",
+      "RawSID": "Satellite_1100_6_8",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_10",
+      "RawSID": "Satellite_1100_6_10",
+      "FailScore": 0.9995822310447693,
+      "HealthScore": 0.000418,
+      "AttackType": 6,
+      "AttackTypeLabel": "ModelTampAttack",
+      "RiskLevel": "高失效风险",
+      "HasLinkedFailedNeighbor": true
+    }
+  ],
+  "ledger": [
+    {
+      "state": "ConsensusState.RECEIVED",
+      "message": "Accepted a FailPoint payload for consensus analysis.",
+      "details": {
+        "reported_fail_sat_count": 40
+      },
+      "timestamp_utc": "2026-05-14T08:19:57.359866+00:00"
+    },
+    {
+      "state": "ConsensusState.VALIDATED",
+      "message": "Validated FailPoint structure and required scenario parameters.",
+      "details": {
+        "constellation_config": 4,
+        "inferred_attack_type": 6,
+        "inferred_attack_label": "ModelTampAttack",
+        "active_attack_labels": [
+          "ModelTampAttack"
+        ]
+      },
+      "timestamp_utc": "2026-05-14T08:19:57.359866+00:00"
+    },
+    {
+      "state": "ConsensusState.NORMALIZED",
+      "message": "Normalized failure observations into canonical satellite identifiers.",
+      "details": {
+        "sid_index_base": 1,
+        "normalized_fail_sat_count": 40,
+        "tle_path": "F:\\part1-2-3+train2\\part1-2-3\\online_self_healing\\Satellite_Data\\Star_6_10_86_1100_5.txt"
+      },
+      "timestamp_utc": "2026-05-14T08:19:57.359866+00:00"
+    },
+    {
+      "state": "ConsensusState.ANALYZED",
+      "message": "Derived HealthScore and RiskLevel values for the scenario.",
+      "details": {
+        "linked_failure_ratio": 0.975,
+        "result_diag_count": 40
+      },
+      "timestamp_utc": "2026-05-14T08:19:57.359866+00:00"
+    },
+    {
+      "state": "ConsensusState.FINALIZED",
+      "message": "Finalized the blockchain consensus diagnosis report.",
+      "details": {
+        "scenario_id": "full-project-round6-test89"
+      },
+      "timestamp_utc": "2026-05-14T08:19:57.359866+00:00"
+    }
+  ]
+}

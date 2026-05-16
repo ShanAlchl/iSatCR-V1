@@ -16,6 +16,7 @@ general:
 
 agent:
   mode: "New_DQN"
+  agent_sharing_mode: "shared"
   neighbors_dim: 48
   edges_dim: 4
   distance_dim: 4

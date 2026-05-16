@@ -1,0 +1,120 @@
+{
+  // 统一运行模式：
+  // - "full"：同时运行攻击识别和参数敏感度
+  // - "attack_only"：只运行攻击识别
+  // - "attribution_only"：只运行参数敏感度
+  "run_mode": "full",
+
+  "global": {
+    // 原始数据根目录。
+    // 攻击识别会从这里递归查找 output_summary.txt。
+    // 参数敏感度在未显式指定 rounds_root 时，也会从这里自动发现 rounds 数据。
+    "data_root": "failure_and_attribution_analysis/full_project_runs",
+
+    // 本次统一运行的总输出目录。
+    // 脚本会自动在这里分出 attack_classifier / attribution_analysis 子目录。
+    "output_root": "failure_and_attribution_analysis/full_project_runs/manual_2_2_analysis",
+    "archive_processed": false,
+    "archive_root": "failure_and_attribution_analysis/data_archive",
+
+    // 统一随机种子。
+    "random_state": 42
+  },
+
+"attack_classifier": {
+    // 是否启用攻击识别模块。
+    "enabled": true,
+    // 默认使用正式版 RandomForest + weak_scene。
+    // 如需切换回旧的 CA44 兼容模式，可改为：
+    // "model_type": "legacy_ca44"
+    // Legacy CA44 artifacts were removed from the streamlined mainline package.
+    "model_type": "random_forest",
+    // weak_scene = AttackLevelMax + 流量参数 + 原始运行指标，
+    // 不包含 ConstellationConfig，也不包含结构类环境特征。
+    "feature_mode": "weak_scene",
+    "artifact_path": "failure_and_attribution_analysis/2.2module/attack_classifier/attack_type_classifier_weak_scene_rf_sklearn17.pkl",
+    "rf_n_estimators": 300,
+    "rf_max_depth": null,
+    // 留空时：从 data_root 重新扫描 output_summary.txt，并生成 merged_output CSV。
+    // 填写现成 CSV 路径时：attack 模块直接复用该文件，不再从 data_root 重建。
+    // 注意：这个参数只影响 attack 模块；attribution 仍然使用 data_root。
+    "input_csv": "",
+
+    // 输出文件名前缀。
+    "output_prefix": "attack_batch_inference",
+
+    // 是否启用 temporal/context 特征增强。
+    "use_temporal_features": true,
+
+    // 训练超参数，直接传给 run_attack_type_experiments.py
+    "epochs": 60,
+    "batch_size": 32,
+    "learning_rate": 0.001
+  },
+
+  "attribution_analysis": {
+    // 是否启用参数敏感度/贡献分析模块。
+    "enabled": true,
+    // 留空时：从 data_root 下发现 rounds/round_*/evalu.txt 并重建 attribution 输入。
+    // 填写现成 CSV 路径时：attribution 模块直接复用该文件，不再从 data_root/rounds 重建。
+    // 该 CSV 需至少包含 SCENARIO_PARAM_NAMES 和目标列（例如 fused_score 或标准 fail_score）。
+    "input_csv": "",
+
+    // 参数敏感度运行模式：
+    // - "compare"：对比 total_membership_v2 / decision_score_v2 / fused_score，并自动推荐目标
+    // - "single"：只跑 target_field 指定的单个目标
+    "target_mode": "compare",
+
+    // single 模式下生效。
+    "target_field": "fused_score",
+
+    // compare 模式下要比较的目标列表。
+    "targets": [
+      "total_membership_v2",
+      "decision_score_v2",
+      "fused_score"
+    ],
+
+    // safe baseline 阈值，直接传给贡献模型训练流程。
+    "safe_threshold": 0.3,
+
+    // 可选覆盖项：
+    // - 留空字符串 ""：脚本会自动从 global.data_root 下面查找包含 round_*/evalu.txt 的 rounds 目录
+    // - 填具体路径：强制参数敏感度模块使用你指定的 rounds 根目录
+    "rounds_root": ""
+  },
+
+  "retraining": {
+    "enabled": false,
+    "auto_promote_candidate": false,
+    "registry_path": "failure_and_attribution_analysis/2.2module/model_artifacts/reports/archive_training_registry.json",
+    "candidate_root": "failure_and_attribution_analysis/2.2module/model_artifacts/candidate",
+    "production_root": "failure_and_attribution_analysis/2.2module/model_artifacts/production",
+    "history_sampling_ratio": {
+      "attack": 1.5,
+      "attribution": 2.0
+    },
+    "max_reuse_per_experiment": 3,
+    "holdout_ratio": 0.2,
+    "trigger_thresholds": {
+      "attack_new_grouped_min": 120,
+      "attack_new_attack_min": 60,
+      "attack_label_coverage_min": 4,
+      "attack_min_label_count": 12,
+      "attack_total_grouped_min": 500,
+      "attribution_new_sample_min": 150,
+      "attribution_target_unique_min": 20,
+      "attribution_constellation_coverage_min": 2,
+      "attribution_total_sample_min": 600
+    },
+    "promotion_thresholds": {
+      "attack_macro_f1_drop_max": 0.01,
+      "attack_weighted_f1_drop_max": 0.01,
+      "attack_key_recall_drop_max": 0.03,
+      "attack_macro_f1_gain_recommend": 0.02,
+      "attribution_mae_ratio_max": 1.03,
+      "attribution_rmse_ratio_max": 1.03,
+      "attribution_r2_drop_max": 0.02
+    }
+  }
+}

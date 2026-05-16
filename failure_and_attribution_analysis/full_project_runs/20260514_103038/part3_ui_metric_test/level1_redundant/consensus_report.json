@@ -1,0 +1,327 @@
+{
+  "scenario_id": "full-project-round1-test2",
+  "linked_failure_ratio": 0.8888888888888888,
+  "constellation_tle_path": "online_self_healing/Satellite_Data/Star_6_10_86_1100_5.txt",
+  "satellite_records": [
+    {
+      "SID": "Satellite_1100_1_1",
+      "RawSID": "Satellite_1100_1_1",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_2",
+      "RawSID": "Satellite_1100_1_2",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_3",
+      "RawSID": "Satellite_1100_1_3",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_4",
+      "RawSID": "Satellite_1100_1_4",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_5",
+      "RawSID": "Satellite_1100_1_5",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_1_10",
+      "RawSID": "Satellite_1100_1_10",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_2",
+      "RawSID": "Satellite_1100_2_2",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_2_4",
+      "RawSID": "Satellite_1100_2_4",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_1",
+      "RawSID": "Satellite_1100_3_1",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_2",
+      "RawSID": "Satellite_1100_3_2",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_3",
+      "RawSID": "Satellite_1100_3_3",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_4",
+      "RawSID": "Satellite_1100_3_4",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_3_8",
+      "RawSID": "Satellite_1100_3_8",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_1",
+      "RawSID": "Satellite_1100_4_1",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_4",
+      "RawSID": "Satellite_1100_4_4",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_5",
+      "RawSID": "Satellite_1100_4_5",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_6",
+      "RawSID": "Satellite_1100_4_6",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_8",
+      "RawSID": "Satellite_1100_4_8",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_4_10",
+      "RawSID": "Satellite_1100_4_10",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_5",
+      "RawSID": "Satellite_1100_5_5",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_6",
+      "RawSID": "Satellite_1100_5_6",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_5_8",
+      "RawSID": "Satellite_1100_5_8",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": false
+    },
+    {
+      "SID": "Satellite_1100_6_2",
+      "RawSID": "Satellite_1100_6_2",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_4",
+      "RawSID": "Satellite_1100_6_4",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_5",
+      "RawSID": "Satellite_1100_6_5",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": true
+    },
+    {
+      "SID": "Satellite_1100_6_7",
+      "RawSID": "Satellite_1100_6_7",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": false
+    },
+    {
+      "SID": "Satellite_1100_6_10",
+      "RawSID": "Satellite_1100_6_10",
+      "FailScore": 0.0,
+      "HealthScore": 1.0,
+      "AttackType": 4,
+      "AttackTypeLabel": "RewardAttack",
+      "RiskLevel": "低失效风险",
+      "HasLinkedFailedNeighbor": false
+    }
+  ],
+  "ledger": [
+    {
+      "state": "ConsensusState.RECEIVED",
+      "message": "Accepted a FailPoint payload for consensus analysis.",
+      "details": {
+        "reported_fail_sat_count": 27
+      },
+      "timestamp_utc": "2026-05-14T03:51:23.551647+00:00"
+    },
+    {
+      "state": "ConsensusState.VALIDATED",
+      "message": "Validated FailPoint structure and required scenario parameters.",
+      "details": {
+        "constellation_config": 4,
+        "inferred_attack_type": 4,
+        "inferred_attack_label": "RewardAttack",
+        "active_attack_labels": [
+          "RewardAttack"
+        ]
+      },
+      "timestamp_utc": "2026-05-14T03:51:23.551647+00:00"
+    },
+    {
+      "state": "ConsensusState.NORMALIZED",
+      "message": "Normalized failure observations into canonical satellite identifiers.",
+      "details": {
+        "sid_index_base": 1,
+        "normalized_fail_sat_count": 27,
+        "tle_path": "F:\\part1-2-3+train2\\part1-2-3\\online_self_healing\\Satellite_Data\\Star_6_10_86_1100_5.txt"
+      },
+      "timestamp_utc": "2026-05-14T03:51:23.553152+00:00"
+    },
+    {
+      "state": "ConsensusState.ANALYZED",
+      "message": "Derived HealthScore and RiskLevel values for the scenario.",
+      "details": {
+        "linked_failure_ratio": 0.8888888888888888,
+        "result_diag_count": 27
+      },
+      "timestamp_utc": "2026-05-14T03:51:23.553152+00:00"
+    },
+    {
+      "state": "ConsensusState.FINALIZED",
+      "message": "Finalized the blockchain consensus diagnosis report.",
+      "details": {
+        "scenario_id": "full-project-round1-test2"
+      },
+      "timestamp_utc": "2026-05-14T03:51:23.553152+00:00"
+    }
+  ]
+}

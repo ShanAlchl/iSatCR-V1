@@ -1,0 +1,145 @@
+ROUND_INDEX: 6
+TEST_ID: 88
+SCENARIO_JSON: {"ActionAttack_level": 0, "ConstellationConfig": 4, "DegradedEdgeRatio": 0.541187533446029, "EdgeBandwidthDecreaseStd": 0.07344702292717556, "EdgeBandwidthMeanDecreaseRatio": 0.4523217420165613, "EdgeDisconnectRatio": 0.3289899432963115, "ExperiencePoolAttack_level": 0, "MeanIntervalTime": 19.72618102065119, "ModelTampAttack_level": 0, "PacketGenerationInterval": 3.770624704496422, "PacketSizeMean": 103714942, "PacketSizeStd": 297366948, "PoissonRate": 44.98646573209986, "RewardAttack_level": 0, "StateObservationAttack_level": 0, "StateTransferAttack_level": 0}
+RAW_LOG_NAME: closed_loop_r006_t0088.txt
+
+====== step 10 ======
+====== 2026-05-14 10:44:48 ======
+PacketLossRate: 81.82%
+NetworkThroughput: 1.990 Mbps
+BandwidthUtilization: 0.07%
+AvgPacketNodeVisits: 2.800
+CumulativeReward: 0.950319
+AverageInferenceTime: 2.317 ms
+AverageE2eDelay: 1.651 seconds
+AverageHopCount: 4.000 hops
+AverageComputingRatio: 3.50%
+ComputingWaitingTime: 1.314 seconds
+AverageEndingReward: 0.9174368416849343
+AttackSummary: None
+====== step 20 ======
+====== 2026-05-14 10:44:48 ======
+PacketLossRate: 20.00%
+NetworkThroughput: 66.302 Mbps
+BandwidthUtilization: 0.19%
+AvgPacketNodeVisits: 5.088
+CumulativeReward: 11.743242
+AverageInferenceTime: 0.394 ms
+AverageE2eDelay: 1.248 seconds
+AverageHopCount: 4.750 hops
+AverageComputingRatio: 4.67%
+ComputingWaitingTime: 1.034 seconds
+AverageEndingReward: 0.901906575142494
+AttackSummary: None
+====== step 30 ======
+====== 2026-05-14 10:44:49 ======
+PacketLossRate: 29.41%
+NetworkThroughput: 26.326 Mbps
+BandwidthUtilization: 0.08%
+AvgPacketNodeVisits: 4.857
+CumulativeReward: 10.828889
+AverageInferenceTime: 0.399 ms
+AverageE2eDelay: 1.167 seconds
+AverageHopCount: 4.833 hops
+AverageComputingRatio: 4.67%
+ComputingWaitingTime: 1.043 seconds
+AverageEndingReward: 0.900003258759937
+AttackSummary: None
+====== step 40 ======
+====== 2026-05-14 10:44:49 ======
+PacketLossRate: 56.82%
+NetworkThroughput: 20.056 Mbps
+BandwidthUtilization: 0.11%
+AvgPacketNodeVisits: 3.532
+CumulativeReward: 8.481940
+AverageInferenceTime: 0.418 ms
+AverageE2eDelay: 1.035 seconds
+AverageHopCount: 3.895 hops
+AverageComputingRatio: 8.00%
+ComputingWaitingTime: 0.940 seconds
+AverageEndingReward: 0.8956148168535021
+AttackSummary: None
+====== step 50 ======
+====== 2026-05-14 10:44:50 ======
+PacketLossRate: 60.98%
+NetworkThroughput: 27.765 Mbps
+BandwidthUtilization: 0.16%
+AvgPacketNodeVisits: 3.805
+CumulativeReward: 6.666679
+AverageInferenceTime: 0.434 ms
+AverageE2eDelay: 1.829 seconds
+AverageHopCount: 3.062 hops
+AverageComputingRatio: 8.33%
+ComputingWaitingTime: 1.667 seconds
+AverageEndingReward: 0.9085473986005345
+AttackSummary: None
+====== step 60 ======
+====== 2026-05-14 10:44:50 ======
+PacketLossRate: 52.78%
+NetworkThroughput: 27.598 Mbps
+BandwidthUtilization: 0.10%
+AvgPacketNodeVisits: 4.562
+CumulativeReward: 8.503920
+AverageInferenceTime: 0.447 ms
+AverageE2eDelay: 1.306 seconds
+AverageHopCount: 3.824 hops
+AverageComputingRatio: 4.67%
+ComputingWaitingTime: 1.161 seconds
+AverageEndingReward: 0.9346799627892739
+AttackSummary: None
+====== step 70 ======
+====== 2026-05-14 10:44:51 ======
+PacketLossRate: 30.77%
+NetworkThroughput: 3.668 Mbps
+BandwidthUtilization: 0.06%
+AvgPacketNodeVisits: 4.034
+CumulativeReward: 10.584311
+AverageInferenceTime: 0.411 ms
+AverageE2eDelay: 0.791 seconds
+AverageHopCount: 3.833 hops
+AverageComputingRatio: 4.33%
+ComputingWaitingTime: 0.724 seconds
+AverageEndingReward: 0.9604749028318069
+AttackSummary: None
+====== step 80 ======
+====== 2026-05-14 10:44:51 ======
+PacketLossRate: 40.62%
+NetworkThroughput: 30.152 Mbps
+BandwidthUtilization: 0.09%
+AvgPacketNodeVisits: 3.774
+CumulativeReward: 10.031355
+AverageInferenceTime: 0.432 ms
+AverageE2eDelay: 1.488 seconds
+AverageHopCount: 3.632 hops
+AverageComputingRatio: 7.00%
+ComputingWaitingTime: 1.324 seconds
+AverageEndingReward: 0.9256097212035502
+AttackSummary: None
+====== step 90 ======
+====== 2026-05-14 10:44:52 ======
+PacketLossRate: 45.65%
+NetworkThroughput: 8.723 Mbps
+BandwidthUtilization: 0.06%
+AvgPacketNodeVisits: 3.571
+CumulativeReward: 11.090942
+AverageInferenceTime: 0.400 ms
+AverageE2eDelay: 1.164 seconds
+AverageHopCount: 3.840 hops
+AverageComputingRatio: 6.00%
+ComputingWaitingTime: 1.098 seconds
+AverageEndingReward: 0.901804015071118
+AttackSummary: None
+====== step 100 ======
+====== 2026-05-14 10:44:52 ======
+PacketLossRate: 22.92%
+NetworkThroughput: 48.339 Mbps
+BandwidthUtilization: 0.08%
+AvgPacketNodeVisits: 4.116
+CumulativeReward: 18.164797
+AverageInferenceTime: 0.470 ms
+AverageE2eDelay: 0.759 seconds
+AverageHopCount: 3.541 hops
+AverageComputingRatio: 3.83%
+ComputingWaitingTime: 0.666 seconds
+AverageEndingReward: 0.9350271291366097
+AttackSummary: None

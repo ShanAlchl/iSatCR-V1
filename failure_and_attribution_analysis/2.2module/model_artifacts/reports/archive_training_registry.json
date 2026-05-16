@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "experiment_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_103038",
+      "constellation_id": "4",
+      "archived_at": "2026-05-14T15:30:12",
+      "eligible_for_retraining": true,
+      "times_sampled": 0,
+      "last_sampled_at": null,
+      "last_used_in_retrain_run_id": null,
+      "data_quality_status": "ok",
+      "attack_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_103038\\current_session\\output_summary.txt",
+      "attack_grouped_sample_count": 129,
+      "attack_attack_sample_count": 76,
+      "attack_label_counts": {
+        "NoAttack": 53,
+        "RewardAttack": 8,
+        "StateObservationAttack": 17,
+        "ActionAttack": 21,
+        "StateTransferAttack": 11,
+        "ModelTampAttack": 10,
+        "ExperiencePoolAttack": 9
+      },
+      "attack_label_coverage": [
+        "ActionAttack",
+        "ExperiencePoolAttack",
+        "ModelTampAttack",
+        "NoAttack",
+        "RewardAttack",
+        "StateObservationAttack",
+        "StateTransferAttack"
+      ],
+      "attribution_rounds_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_103038\\current_session\\rounds",
+      "attribution_sample_count": 129,
+      "attribution_target_unique_count": 48,
+      "attribution_target_is_constant": false
+    },
+    {
+      "experiment_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_155731",
+      "constellation_id": "4",
+      "archived_at": "2026-05-14T16:19:54",
+      "eligible_for_retraining": true,
+      "times_sampled": 0,
+      "last_sampled_at": null,
+      "last_used_in_retrain_run_id": null,
+      "data_quality_status": "ok",
+      "attack_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_155731\\current_session\\output_summary.txt",
+      "attack_grouped_sample_count": 129,
+      "attack_attack_sample_count": 73,
+      "attack_label_counts": {
+        "NoAttack": 56,
+        "RewardAttack": 7,
+        "StateObservationAttack": 17,
+        "ActionAttack": 20,
+        "StateTransferAttack": 10,
+        "ModelTampAttack": 9,
+        "ExperiencePoolAttack": 10
+      },
+      "attack_label_coverage": [
+        "ActionAttack",
+        "ExperiencePoolAttack",
+        "ModelTampAttack",
+        "NoAttack",
+        "RewardAttack",
+        "StateObservationAttack",
+        "StateTransferAttack"
+      ],
+      "attribution_rounds_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_155731\\current_session\\rounds",
+      "attribution_sample_count": 129,
+      "attribution_target_unique_count": 47,
+      "attribution_target_is_constant": false
+    }
+  ]
+}

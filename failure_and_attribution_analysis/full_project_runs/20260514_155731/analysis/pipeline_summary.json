@@ -1,0 +1,274 @@
+{
+  "config_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\runtime_pipeline_config.jsonc",
+  "run_mode": "full",
+  "data_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\simulation_data",
+  "output_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis",
+  "source_session_count": 1,
+  "attack_classifier": {
+    "enabled": true,
+    "artifact_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attack_classifier\\attack_type_classifier_weak_scene_rf_sklearn17.pkl",
+    "input_csv": null,
+    "merged_csv": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attack_classifier\\merged_output_attack_batch_inference.csv",
+    "predictions_jsonl": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attack_classifier\\attack_type_predictions_attack_batch_inference.jsonl",
+    "summary_json": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attack_classifier\\attack_type_prediction_summary_attack_batch_inference.json",
+    "sample_count": 129,
+    "metrics": {
+      "accuracy": 0.8914728682170543,
+      "macro_precision": 0.9166666666666666,
+      "macro_recall": 0.8167533680138721,
+      "macro_f1": 0.8497677989229929,
+      "weighted_precision": 0.9153746770025839,
+      "weighted_recall": 0.8914728682170543,
+      "weighted_f1": 0.8928276379778257,
+      "confusion_matrix": [
+        [
+          56,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          7
+        ]
+      ],
+      "labels": [
+        "NoAttack",
+        "StateObservationAttack",
+        "ActionAttack",
+        "StateTransferAttack",
+        "RewardAttack",
+        "ExperiencePoolAttack",
+        "ModelTampAttack"
+      ]
+    },
+    "auto_enabled_from_artifact": true
+  },
+  "attribution_analysis": {
+    "enabled": true,
+    "artifact_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\attribution_analysis\\fail_score_contribution_model_fused_score_from_data_root.pkl",
+    "input_csv": null,
+    "target_field": "fused_score",
+    "predictions_jsonl": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attribution_analysis\\fail_score_contributions_fused_score.jsonl",
+    "summary_json": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\attribution_analysis\\fail_score_contribution_summary_fused_score.json",
+    "sample_count": 129,
+    "mean_absolute_error": 0.2001290667321649,
+    "global_top_features": [
+      {
+        "feature_name": "ConstellationConfig",
+        "mean_contribution": 0.21589710561143982,
+        "rank": 1
+      },
+      {
+        "feature_name": "DegradedEdgeRatio",
+        "mean_contribution": 0.09580579346530493,
+        "rank": 2
+      },
+      {
+        "feature_name": "PacketSizeMean",
+        "mean_contribution": 0.08304118464016375,
+        "rank": 3
+      }
+    ]
+  },
+  "integrated_results": {
+    "output_jsonl": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\analysis\\integrated_attack_attribution_results.jsonl",
+    "sample_count": 129,
+    "matched_count": 129,
+    "attack_only_count": 0,
+    "attribution_only_count": 0
+  },
+  "archive_summary": {
+    "enabled": true,
+    "archive_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive",
+    "attempted_count": 1,
+    "archived_count": 1,
+    "skipped_due_to_collision_count": 0,
+    "skipped_invalid_source_count": 0,
+    "archived_dirs": [
+      {
+        "source_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\full_project_runs\\20260514_155731\\simulation_data\\4\\20260514_155731",
+        "target_dir": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\data_archive\\4\\20260514_155731"
+      }
+    ],
+    "skipped_due_to_collision": [],
+    "skipped_invalid_source": []
+  },
+  "retraining_summary": {
+    "enabled": true,
+    "reason": "completed",
+    "summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\reports\\20260514_161952\\candidate_retrain_summary.json",
+    "threshold_gate_summary_path": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\reports\\20260514_161952\\threshold_gate_summary.json",
+    "run_id": "20260514_161952",
+    "attack_classifier": {
+      "triggered": false,
+      "skip_reasons": [
+        "attack_min_label_count_below_threshold"
+      ],
+      "new_experiment_count": 1,
+      "new_grouped_sample_count": 129,
+      "new_attack_sample_count": 73,
+      "new_label_counts": {
+        "NoAttack": 56,
+        "RewardAttack": 7,
+        "StateObservationAttack": 17,
+        "ActionAttack": 20,
+        "StateTransferAttack": 10,
+        "ModelTampAttack": 9,
+        "ExperiencePoolAttack": 10
+      },
+      "history_sampled_experiments": [],
+      "history_grouped_sample_count": 0,
+      "combined_grouped_sample_count": 129,
+      "candidate_artifact_path": null,
+      "candidate_metrics": null,
+      "production_metrics": null,
+      "threshold_checks": [
+        {
+          "name": "attack_new_grouped_min",
+          "actual": 129,
+          "threshold": 120,
+          "passed": true
+        },
+        {
+          "name": "attack_new_attack_min",
+          "actual": 73,
+          "threshold": 60,
+          "passed": true
+        },
+        {
+          "name": "attack_label_coverage_min",
+          "actual": 7,
+          "threshold": 4,
+          "passed": true
+        },
+        {
+          "name": "attack_min_label_count",
+          "actual": 7,
+          "threshold": 12,
+          "passed": false
+        },
+        {
+          "name": "attack_total_grouped_min",
+          "actual": 258,
+          "threshold": 200,
+          "passed": true
+        }
+      ]
+    },
+    "attribution_analysis": {
+      "triggered": false,
+      "skip_reasons": [
+        "attribution_new_sample_below_threshold"
+      ],
+      "new_experiment_count": 1,
+      "new_sample_count": 129,
+      "new_constellation_count": 1,
+      "history_sampled_experiments": [],
+      "history_sample_count": 0,
+      "combined_sample_count": 129,
+      "candidate_artifact_path": null,
+      "candidate_metrics": null,
+      "production_metrics": null,
+      "threshold_checks": [
+        {
+          "name": "attribution_new_sample_min",
+          "actual": 129,
+          "threshold": 150,
+          "passed": false
+        },
+        {
+          "name": "attribution_target_unique_min",
+          "actual": 47,
+          "threshold": 20,
+          "passed": true
+        },
+        {
+          "name": "attribution_target_is_not_constant",
+          "actual": true,
+          "threshold": true,
+          "passed": true
+        },
+        {
+          "name": "attribution_constellation_coverage_min",
+          "actual": 1,
+          "threshold": 1,
+          "passed": true
+        },
+        {
+          "name": "attribution_total_sample_min",
+          "actual": 258,
+          "threshold": 200,
+          "passed": true
+        }
+      ]
+    },
+    "promotion_decision": {
+      "enabled": true,
+      "attack_classifier": {
+        "evaluated": false,
+        "promoted": false,
+        "reasons": []
+      },
+      "attribution_analysis": {
+        "evaluated": false,
+        "promoted": false,
+        "reasons": []
+      }
+    },
+    "candidate_root": "F:\\part1-2-3+train2\\part1-2-3\\failure_and_attribution_analysis\\2.2module\\model_artifacts\\candidate"
+  }
+}

@@ -1,0 +1,2520 @@
+{
+  "result_by_satellite": {
+    "Satellite_1100_1_1": {
+      "node_id": "Satellite_1100_1_1",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006029844284057617,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_1",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.16303086280822754,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.004521608352661133,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029844284057617,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029844284057617,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029844284057617,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_10": {
+      "node_id": "Satellite_1100_1_10",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.007297992706298828,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_10",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.15700101852416992,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0073s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0044553279876708984,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007297992706298828,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007297992706298828,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007297992706298828,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0073s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_2": {
+      "node_id": "Satellite_1100_1_2",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006029367446899414,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_2",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.1497030258178711,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003016233444213867,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029367446899414,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029367446899414,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006029367446899414,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_3": {
+      "node_id": "Satellite_1100_1_3",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.007196664810180664,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_3",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.14367365837097168,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0072s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0029191970825195312,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007196664810180664,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007196664810180664,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007196664810180664,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0072s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_4": {
+      "node_id": "Satellite_1100_1_4",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.004527091979980469,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_4",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.13647699356079102,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030188560485839844,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004527091979980469,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004527091979980469,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004527091979980469,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_5": {
+      "node_id": "Satellite_1100_1_5",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.007540702819824219,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_1_5",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.13194990158081055,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0075s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.004522085189819336,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007540702819824219,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007540702819824219,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007540702819824219,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0075s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_2_2": {
+      "node_id": "Satellite_1100_2_2",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006156206130981445,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_2_2",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.12440919876098633,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0031316280364990234,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006156206130981445,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006156206130981445,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006156206130981445,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_2_4": {
+      "node_id": "Satellite_1100_2_4",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.00604248046875,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_2_4",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.11825299263000488,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030202865600585938,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00604248046875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00604248046875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00604248046875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_1": {
+      "node_id": "Satellite_1100_3_1",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.005675792694091797,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_3_1",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.11221051216125488,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0057s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030193328857421875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005675792694091797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005675792694091797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005675792694091797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0057s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_2": {
+      "node_id": "Satellite_1100_3_2",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006056070327758789,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_3_2",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.10653471946716309,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003038644790649414,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006056070327758789,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006056070327758789,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006056070327758789,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_3": {
+      "node_id": "Satellite_1100_3_3",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006143093109130859,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_3_3",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.1004786491394043,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003017425537109375,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006143093109130859,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006143093109130859,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006143093109130859,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_4": {
+      "node_id": "Satellite_1100_3_4",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.005858898162841797,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_3_4",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.09433555603027344,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0059s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030241012573242188,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005858898162841797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005858898162841797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005858898162841797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0059s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_8": {
+      "node_id": "Satellite_1100_3_8",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.0066623687744140625,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_3_8",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.08847665786743164,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0067s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=41.38%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0025141239166259766,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0066623687744140625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0066623687744140625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0066623687744140625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0067s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_1": {
+      "node_id": "Satellite_1100_4_1",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.004531145095825195,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_1",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.08181428909301758,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030221939086914062,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004531145095825195,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004531145095825195,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004531145095825195,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_10": {
+      "node_id": "Satellite_1100_4_10",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.007039308547973633,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_10",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.07728314399719238,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0070s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030128955841064453,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007039308547973633,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007039308547973633,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007039308547973633,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0070s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_4": {
+      "node_id": "Satellite_1100_4_4",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006045818328857422,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_4",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.07024383544921875,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030269622802734375,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006045818328857422,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006045818328857422,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006045818328857422,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_5": {
+      "node_id": "Satellite_1100_4_5",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.004528999328613281,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_5",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.06419801712036133,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030181407928466797,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004528999328613281,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004528999328613281,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004528999328613281,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_6": {
+      "node_id": "Satellite_1100_4_6",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.005732059478759766,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_6",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.05966901779174805,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0057s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030150413513183594,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005732059478759766,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005732059478759766,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.005732059478759766,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0057s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_8": {
+      "node_id": "Satellite_1100_4_8",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.00603795051574707,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_4_8",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.05393695831298828,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030243396759033203,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00603795051574707,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00603795051574707,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00603795051574707,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_5": {
+      "node_id": "Satellite_1100_5_5",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.00605320930480957,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_5_5",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.04789900779724121,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003040790557861328,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00605320930480957,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00605320930480957,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.00605320930480957,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0061s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_6": {
+      "node_id": "Satellite_1100_5_6",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.0061953067779541016,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_5_6",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.04184579849243164,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003166675567626953,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0061953067779541016,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0061953067779541016,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0061953067779541016,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_8": {
+      "node_id": "Satellite_1100_5_8",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.004520416259765625,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_5_8",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.03565049171447754,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=44.83%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0030150413513183594,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004520416259765625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004520416259765625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.004520416259765625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0045s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_10": {
+      "node_id": "Satellite_1100_6_10",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006026744842529297,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_6_10",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.031130075454711914,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003012418746948242,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006026744842529297,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006026744842529297,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006026744842529297,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_2": {
+      "node_id": "Satellite_1100_6_2",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006213665008544922,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_6_2",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.025103330612182617,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.004683971405029297,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006213665008544922,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006213665008544922,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006213665008544922,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0062s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_4": {
+      "node_id": "Satellite_1100_6_4",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.006034374237060547,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_6_4",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.018889665603637695,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.003019571304321289,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006034374237060547,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006034374237060547,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.006034374237060547,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0060s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_5": {
+      "node_id": "Satellite_1100_6_5",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.0057964324951171875,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_6_5",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.012855291366577148,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0058s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.002780914306640625,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0057964324951171875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0057964324951171875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.0057964324951171875,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0058s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_7": {
+      "node_id": "Satellite_1100_6_7",
+      "success": true,
+      "healing_level": 1,
+      "healing_time": 0.007058858871459961,
+      "message": "本地基线快照回滚成功 (模型参数 + 经验池)",
+      "source_node": "self",
+      "logger": {
+        "node_id": "Satellite_1100_6_7",
+        "fail_score": 0.0,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.007058858871459961,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 1)，总耗时: 0.0071s",
+        "final_level": 1,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.0000, 分级=低失效风险, 建链关系失效比例=36.84%, 攻击类型=4, 初始入口=Level 1",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "进入 Level 1 单点冗余自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "启动冗余自愈 (恢复目标: 模型参数 + 经验池)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "尝试读取节点内置的安全基线快照",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.00403904914855957,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "本地基线快照回滚成功",
+            "detail": "恢复内容: 模型参数 + 经验池",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007058858871459961,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已将恢复的模型参数加载至节点 QNetwork",
+            "detail": "",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007058858871459961,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "已同步恢复节点的经验池数据",
+            "detail": "经验池大小: 0 条",
+            "source_node": "self",
+            "success": true
+          },
+          {
+            "timestamp": 0.007058858871459961,
+            "level": 1,
+            "level_label": "冗余自愈",
+            "action": "结果: 自愈成功 (解决于 Level 1)，总耗时: 0.0071s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    }
+  },
+  "success_count": 27,
+  "failed_count": 0,
+  "restored_satellites": [
+    "Satellite_1100_1_1",
+    "Satellite_1100_1_10",
+    "Satellite_1100_1_2",
+    "Satellite_1100_1_3",
+    "Satellite_1100_1_4",
+    "Satellite_1100_1_5",
+    "Satellite_1100_2_2",
+    "Satellite_1100_2_4",
+    "Satellite_1100_3_1",
+    "Satellite_1100_3_2",
+    "Satellite_1100_3_3",
+    "Satellite_1100_3_4",
+    "Satellite_1100_3_8",
+    "Satellite_1100_4_1",
+    "Satellite_1100_4_10",
+    "Satellite_1100_4_4",
+    "Satellite_1100_4_5",
+    "Satellite_1100_4_6",
+    "Satellite_1100_4_8",
+    "Satellite_1100_5_5",
+    "Satellite_1100_5_6",
+    "Satellite_1100_5_8",
+    "Satellite_1100_6_10",
+    "Satellite_1100_6_2",
+    "Satellite_1100_6_4",
+    "Satellite_1100_6_5",
+    "Satellite_1100_6_7"
+  ],
+  "kept_isolated_satellites": []
+}

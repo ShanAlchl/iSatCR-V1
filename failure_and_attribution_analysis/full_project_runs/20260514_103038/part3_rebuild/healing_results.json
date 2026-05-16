@@ -1,0 +1,5055 @@
+{
+  "result_by_satellite": {
+    "Satellite_1100_1_10": {
+      "node_id": "Satellite_1100_1_10",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8273494243621826,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_1_10",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 14.058985948562622,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8273s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.007055044174194336,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 162",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10954451560974121,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 162",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10954451560974121,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 167",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.21065521240234375,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 167",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.21065521240234375,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 62",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.31210947036743164,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 62",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.31210947036743164,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 124",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4135448932647705,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 124",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4135448932647705,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 191",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5152726173400879,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 191",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5152726173400879,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 129",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.616584062576294,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 129",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.616584062576294,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 145",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7179787158966064,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 145",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7179787158966064,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 95",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8198118209838867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 95",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8198118209838867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8198118209838867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8243343830108643,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8243343830108643,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 1075",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8258423805236816,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8258423805236816,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8273494243621826,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8273494243621826,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8273s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_4": {
+      "node_id": "Satellite_1100_1_4",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8257040977478027,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_1_4",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 13.23163652420044,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8257s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 81",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10057711601257324,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 81",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10057711601257324,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 80",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20186448097229004,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 80",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20186448097229004,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 191",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3035011291503906,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 191",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3035011291503906,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 108",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4059865474700928,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 108",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4059865474700928,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 132",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5094845294952393,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 132",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5094845294952393,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 168",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6105928421020508,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 168",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6105928421020508,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 78",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7130389213562012,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 78",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7130389213562012,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 175",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8166019916534424,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 175",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8166019916534424,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8166019916534424,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8211238384246826,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8211238384246826,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 1013",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8241977691650391,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8241977691650391,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8257040977478027,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8257040977478027,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8257s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_7": {
+      "node_id": "Satellite_1100_1_7",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8293070793151855,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_1_7",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 12.405932426452637,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8293s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015082359313964844,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015082359313964844,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015082359313964844,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015082359313964844,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015082359313964844,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 80",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10354900360107422,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 80",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10354900360107422,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 146",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20506930351257324,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 146",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20506930351257324,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 114",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3075416088104248,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 114",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3075416088104248,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 121",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4096987247467041,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 121",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4096987247467041,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 139",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5116913318634033,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 139",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5116913318634033,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 154",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6145460605621338,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 154",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6145460605621338,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 169",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7171752452850342,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 169",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7171752452850342,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 104",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8202672004699707,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 104",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8202672004699707,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8202672004699707,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8247871398925781,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 6 更新异常 (Z-Score=1.73)，已剔除",
+            "detail": "与中心距离: 18.1636, 均值: 18.1268, 标准差: 0.0213",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8247871398925781,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8247871398925781,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 858",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8278002738952637,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8278002738952637,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8293070793151855,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8293070793151855,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8293s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_1_8": {
+      "node_id": "Satellite_1100_1_8",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8284549713134766,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_1_8",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 11.576625347137451,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8285s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.00157928466796875,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.00157928466796875,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.00157928466796875,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.00157928466796875,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 145",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10181736946105957,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 145",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10181736946105957,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 139",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.2046358585357666,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 139",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.2046358585357666,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 192",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.30762600898742676,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 192",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.30762600898742676,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 62",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.40875720977783203,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 62",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4102649688720703,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 102",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5122623443603516,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 102",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5122623443603516,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 191",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6137387752532959,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 191",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6137387752532959,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 124",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7167794704437256,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 124",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7167794704437256,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 140",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8192832469940186,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 140",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8192832469940186,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8192832469940186,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8239154815673828,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 7 更新异常 (Z-Score=1.93)，已剔除",
+            "detail": "与中心距离: 18.1546, 均值: 18.1196, 标准差: 0.0181",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8239154815673828,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8239154815673828,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 955",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8269429206848145,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8269429206848145,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8284549713134766,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8284549713134766,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8285s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_2_2": {
+      "node_id": "Satellite_1100_2_2",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8266682624816895,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_2_2",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 10.748170375823975,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8267s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=24.14%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 134",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10335302352905273,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 134",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10335302352905273,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 139",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20441436767578125,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 139",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20441436767578125,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 193",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.30759191513061523,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 193",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.30759191513061523,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 103",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.40921616554260254,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 103",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.40921616554260254,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 186",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5100398063659668,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 186",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5100398063659668,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 103",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6120762825012207,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 103",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6120762825012207,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 175",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7135732173919678,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 175",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7135732173919678,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 131",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8163259029388428,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 131",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8163259029388428,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8163259029388428,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8223505020141602,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8223505020141602,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 1164",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8238561153411865,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8253614902496338,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8266682624816895,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8266682624816895,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8267s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_2_3": {
+      "node_id": "Satellite_1100_2_3",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8263170719146729,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_2_3",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 9.921502113342285,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8263s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=24.14%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 114",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10274982452392578,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 114",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10274982452392578,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 78",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20519614219665527,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 78",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20519614219665527,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 110",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3067314624786377,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 110",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3067314624786377,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 178",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.41013503074645996,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 178",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.41013503074645996,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 50",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5108702182769775,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 50",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5123786926269531,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 74",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6138277053833008,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 74",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6138277053833008,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 55",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7170288562774658,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 55",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7170288562774658,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 81",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8187689781188965,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 81",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8187689781188965,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8187689781188965,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8232958316802979,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 2 更新异常 (Z-Score=1.56)，已剔除",
+            "detail": "与中心距离: 18.1412, 均值: 18.1081, 标准差: 0.0212",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8232958316802979,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8232958316802979,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 630",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8232958316802979,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8232958316802979,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8263170719146729,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8263170719146729,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8263s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_1": {
+      "node_id": "Satellite_1100_3_1",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8243284225463867,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_3_1",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 9.095185041427612,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8243s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=20.69%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 58",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10110306739807129,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 58",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10110306739807129,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 199",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.2025158405303955,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 199",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.2040846347808838,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 160",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3066368103027344,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 160",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3066368103027344,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 160",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4076409339904785,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 160",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4076409339904785,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 97",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5106549263000488,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 97",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5106549263000488,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 57",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6113054752349854,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 57",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6113054752349854,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 58",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.713374137878418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 58",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.713374137878418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 124",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8167266845703125,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 124",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8167266845703125,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8167266845703125,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8198065757751465,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8198065757751465,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 913",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8213145732879639,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8213145732879639,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8243284225463867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8243284225463867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8243s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_3_6": {
+      "node_id": "Satellite_1100_3_6",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8285961151123047,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_3_6",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 8.270856618881226,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8286s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=20.69%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 152",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10257387161254883,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 152",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10257387161254883,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 60",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20507335662841797,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 60",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20507335662841797,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 189",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3086402416229248,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 189",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3086402416229248,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 52",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.41083741188049316,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 52",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.41083741188049316,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 58",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5138983726501465,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 58",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5138983726501465,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 196",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6157083511352539,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 196",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6157083511352539,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 97",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7172601222991943,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 97",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7172601222991943,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 66",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8210668563842773,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 66",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8210668563842773,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8210668563842773,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8255858421325684,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 5 更新异常 (Z-Score=1.54)，已剔除",
+            "detail": "与中心距离: 18.1776, 均值: 18.1259, 标准差: 0.0336",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8255858421325684,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8255858421325684,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 674",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8270912170410156,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8270912170410156,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8285961151123047,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8285961151123047,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8286s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_1": {
+      "node_id": "Satellite_1100_4_1",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8274481296539307,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_4_1",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 7.442260503768921,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8274s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=24.14%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 51",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10304570198059082,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 51",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10304570198059082,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 107",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20424818992614746,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 107",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20525240898132324,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 51",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3069334030151367,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 51",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3069334030151367,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 155",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.40941524505615234,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 155",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.40941524505615234,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 89",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5120828151702881,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 89",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5120828151702881,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 161",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6139919757843018,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 161",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6139919757843018,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 81",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7173616886138916,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 81",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7173616886138916,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 198",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8200533390045166,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 198",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8200533390045166,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8200533390045166,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8243675231933594,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 2 更新异常 (Z-Score=1.73)，已剔除",
+            "detail": "与中心距离: 18.1756, 均值: 18.1162, 标准差: 0.0343",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8243675231933594,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8243675231933594,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 842",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8243675231933594,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8258728981018066,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8274481296539307,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8274481296539307,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8274s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_10": {
+      "node_id": "Satellite_1100_4_10",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8309943675994873,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_4_10",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 6.61481237411499,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8310s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=24.14%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 159",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10267138481140137,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 159",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10267138481140137,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 57",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20468950271606445,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 57",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20468950271606445,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 92",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3071870803833008,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 92",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3071870803833008,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 195",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4097895622253418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 195",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4097895622253418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 141",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5113792419433594,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 141",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.512887716293335,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 104",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6145617961883545,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 104",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6145617961883545,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 146",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7171828746795654,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 146",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7171828746795654,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 50",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8205084800720215,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 50",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8205084800720215,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8205084800720215,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8251175880432129,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 6 更新异常 (Z-Score=1.67)，已剔除",
+            "detail": "与中心距离: 18.1992, 均值: 18.1305, 标准差: 0.0410",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8251175880432129,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8251175880432129,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 798",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8279726505279541,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8279726505279541,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8309943675994873,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8309943675994873,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8310s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_4_4": {
+      "node_id": "Satellite_1100_4_4",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8263671398162842,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_4_4",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 5.783818006515503,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8264s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=24.14%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 59",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10311651229858398,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 59",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10311651229858398,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 186",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20477986335754395,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 186",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20477986335754395,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 127",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3065836429595947,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 127",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3065836429595947,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 156",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.407637357711792,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 156",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4091451168060303,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 130",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5102307796478271,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 130",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5102307796478271,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 143",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6128683090209961,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 143",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6128683090209961,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 98",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7147262096405029,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 98",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7147262096405029,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 191",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8177378177642822,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 191",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8177378177642822,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8177378177642822,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8222577571868896,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 7 更新异常 (Z-Score=1.73)，已剔除",
+            "detail": "与中心距离: 18.1541, 均值: 18.1107, 标准差: 0.0251",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8222577571868896,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8222577571868896,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 899",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8252689838409424,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8252689838409424,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8263671398162842,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8263671398162842,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8264s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_3": {
+      "node_id": "Satellite_1100_5_3",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8279552459716797,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_5_3",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 4.957450866699219,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8280s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=27.59%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 79",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10263752937316895,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 79",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10263752937316895,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 146",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20540142059326172,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 146",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20591378211975098,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 53",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.30765199661254883,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 53",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.30765199661254883,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 104",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4098184108734131,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 104",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4098184108734131,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 144",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5126252174377441,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 144",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5126252174377441,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 194",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.615147590637207,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 194",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.615147590637207,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 125",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7167317867279053,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 125",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7167317867279053,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 51",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8203322887420654,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 51",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8203322887420654,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8203322887420654,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8248550891876221,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 4 更新异常 (Z-Score=1.63)，已剔除",
+            "detail": "与中心距离: 18.1604, 均值: 18.1145, 标准差: 0.0282",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8248550891876221,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8248550891876221,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 752",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8263609409332275,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8263609409332275,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8279552459716797,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8279552459716797,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8280s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_5": {
+      "node_id": "Satellite_1100_5_5",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8255100250244141,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_5_5",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 4.129495620727539,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8255s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=27.59%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 81",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10284972190856934,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 81",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10284972190856934,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 72",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20398545265197754,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 72",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20398545265197754,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 127",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3051636219024658,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 127",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3066728115081787,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 106",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.40895557403564453,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 106",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.40895557403564453,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 128",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5113253593444824,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 128",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5113253593444824,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 176",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6126015186309814,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 176",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6141114234924316,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 198",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7161211967468262,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 198",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7161211967468262,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 149",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8166224956512451,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 149",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8166224956512451,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8181307315826416,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8211431503295898,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 6 更新异常 (Z-Score=2.18)，已剔除",
+            "detail": "与中心距离: 18.2073, 均值: 18.1256, 标准差: 0.0374",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8211431503295898,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8211431503295898,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 839",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8226511478424072,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8226511478424072,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8255100250244141,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8255100250244141,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8255s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_5_9": {
+      "node_id": "Satellite_1100_5_9",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.827258825302124,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_5_9",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 3.303985595703125,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8273s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=27.59%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 140",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10286569595336914,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 140",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10286569595336914,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 130",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20578551292419434,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 130",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20578551292419434,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 169",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3083467483520508,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 169",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3083467483520508,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 146",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4109070301055908,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 146",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4109070301055908,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 142",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5138800144195557,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 142",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5138800144195557,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 68",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6159195899963379,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 68",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6159195899963379,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 172",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.717461347579956,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 172",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.717461347579956,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 181",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8196671009063721,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 181",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8196671009063721,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8196671009063721,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8242456912994385,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8242456912994385,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 1148",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8257520198822021,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8257520198822021,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.827258825302124,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.827258825302124,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8273s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_3": {
+      "node_id": "Satellite_1100_6_3",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.827385425567627,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_6_3",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 2.476726770401001,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8274s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 82",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.10378670692443848,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 82",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.10378670692443848,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 126",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20478510856628418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 126",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20478510856628418,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 98",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.30641841888427734,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 98",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.30641841888427734,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 91",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.40833306312561035,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 91",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.40833306312561035,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 96",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5113558769226074,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 96",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5113558769226074,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 139",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.61417555809021,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 139",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.61417555809021,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 157",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.7165064811706543,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 157",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.7165064811706543,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 192",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8199582099914551,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 192",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8199582099914551,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8199582099914551,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8248767852783203,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 8/8, 剔除: 0 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8248767852783203,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 8, 总样本数: 981",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8258790969848633,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8258790969848633,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.827385425567627,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.827385425567627,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8274s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_4": {
+      "node_id": "Satellite_1100_6_4",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8250365257263184,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_6_4",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 1.649341344833374,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8250s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0015063285827636719,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 157",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.1027679443359375,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 157",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.1027679443359375,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 83",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20623183250427246,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 83",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20623183250427246,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 140",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3077695369720459,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 140",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.3077695369720459,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 131",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4101090431213379,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 131",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4101090431213379,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 69",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5119154453277588,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 69",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5119154453277588,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 91",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6138288974761963,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 91",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6138288974761963,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 188",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.716914176940918,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 188",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.716914176940918,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 80",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8179352283477783,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 80",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8179352283477783,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8179352283477783,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8204441070556641,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 1 更新异常 (Z-Score=1.85)，已剔除",
+            "detail": "与中心距离: 18.1802, 均值: 18.1274, 标准差: 0.0285",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8204441070556641,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8204441070556641,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 856",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8220229148864746,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8220229148864746,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8250365257263184,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8250365257263184,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8250s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    },
+    "Satellite_1100_6_7": {
+      "node_id": "Satellite_1100_6_7",
+      "success": true,
+      "healing_level": 4,
+      "healing_time": 0.8227908611297607,
+      "message": "联邦学习重训练成功",
+      "source_node": null,
+      "logger": {
+        "node_id": "Satellite_1100_6_7",
+        "fail_score": 0.9975318908691406,
+        "attack_type": 4,
+        "attack_label": "RewardAttack",
+        "total_time": 0.8243048191070557,
+        "final_success": true,
+        "final_result": "自愈成功 (解决于 Level 4)，总耗时: 0.8228s",
+        "final_level": 4,
+        "steps": [
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动分级自愈总控流程",
+            "detail": "FailScore=0.9975, 分级=高失效风险, 建链关系失效比例=26.32%, 攻击类型=4, 初始入口=Level 4",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "进入 Level 4 联邦学习自愈层",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "联邦邻居采样: 从 43 个健康邻居中选取最近 8 个 (20%)",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动联邦学习自愈 (局部邻域聚合)",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "健康邻居数量: 8",
+            "detail": "参与节点: Satellite_1100_4_6, Satellite_1100_5_10, Satellite_1100_6_9, Satellite_1100_3_2, Satellite_1100_2_7, Satellite_1100_1_3, Satellite_1100_3_7, Satellite_1100_4_5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 1: 下发初始模型，启动各节点本地训练",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.0,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 开始本地训练",
+            "detail": "样本数: 181",
+            "source_node": "Satellite_1100_4_6",
+            "success": null
+          },
+          {
+            "timestamp": 0.1015768051147461,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_6 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 181",
+            "source_node": "Satellite_1100_4_6",
+            "success": true
+          },
+          {
+            "timestamp": 0.1015768051147461,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 开始本地训练",
+            "detail": "样本数: 89",
+            "source_node": "Satellite_1100_5_10",
+            "success": null
+          },
+          {
+            "timestamp": 0.20313620567321777,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_5_10 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 89",
+            "source_node": "Satellite_1100_5_10",
+            "success": true
+          },
+          {
+            "timestamp": 0.20313620567321777,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 开始本地训练",
+            "detail": "样本数: 70",
+            "source_node": "Satellite_1100_6_9",
+            "success": null
+          },
+          {
+            "timestamp": 0.3050382137298584,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_6_9 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 70",
+            "source_node": "Satellite_1100_6_9",
+            "success": true
+          },
+          {
+            "timestamp": 0.30604124069213867,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 开始本地训练",
+            "detail": "样本数: 169",
+            "source_node": "Satellite_1100_3_2",
+            "success": null
+          },
+          {
+            "timestamp": 0.4081082344055176,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_2 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 169",
+            "source_node": "Satellite_1100_3_2",
+            "success": true
+          },
+          {
+            "timestamp": 0.4081082344055176,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 开始本地训练",
+            "detail": "样本数: 99",
+            "source_node": "Satellite_1100_2_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.5092213153839111,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_2_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 99",
+            "source_node": "Satellite_1100_2_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.5102231502532959,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 开始本地训练",
+            "detail": "样本数: 78",
+            "source_node": "Satellite_1100_1_3",
+            "success": null
+          },
+          {
+            "timestamp": 0.6111462116241455,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_1_3 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 78",
+            "source_node": "Satellite_1100_1_3",
+            "success": true
+          },
+          {
+            "timestamp": 0.6121478080749512,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 开始本地训练",
+            "detail": "样本数: 130",
+            "source_node": "Satellite_1100_3_7",
+            "success": null
+          },
+          {
+            "timestamp": 0.714144229888916,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_3_7 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 130",
+            "source_node": "Satellite_1100_3_7",
+            "success": true
+          },
+          {
+            "timestamp": 0.714144229888916,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 开始本地训练",
+            "detail": "样本数: 92",
+            "source_node": "Satellite_1100_4_5",
+            "success": null
+          },
+          {
+            "timestamp": 0.8168482780456543,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "工作节点 Satellite_1100_4_5 本地训练完成",
+            "detail": "更新参数量: 150022, 训练样本: 92",
+            "source_node": "Satellite_1100_4_5",
+            "success": true
+          },
+          {
+            "timestamp": 0.8168482780456543,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 2: 所有节点训练完成，启动异常检测与参数聚合",
+            "detail": "",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8168482780456543,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "启动异常更新检测与剪枝",
+            "detail": "剪枝阈值 (Z-Score): 1.5",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8212785720825195,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "剪枝: 节点 5 更新异常 (Z-Score=1.66)，已剔除",
+            "detail": "与中心距离: 18.1680, 均值: 18.1179, 标准差: 0.0301",
+            "source_node": null,
+            "success": false
+          },
+          {
+            "timestamp": 0.8212785720825195,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "异常检测完成",
+            "detail": "有效节点: 7/8, 剔除: 1 个",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8212785720825195,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "执行 FedAvg 加权聚合",
+            "detail": "参与节点数: 7, 总样本数: 830",
+            "source_node": null,
+            "success": null
+          },
+          {
+            "timestamp": 0.8227908611297607,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "FedAvg 聚合完成",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8227908611297607,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "阶段 3: 联邦参数聚合完成，生成新全局模型",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8227908611297607,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "已将联邦聚合的全局模型加载至节点 QNetwork",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          },
+          {
+            "timestamp": 0.8227908611297607,
+            "level": 4,
+            "level_label": "联邦学习自愈",
+            "action": "结果: 自愈成功 (解决于 Level 4)，总耗时: 0.8228s",
+            "detail": "",
+            "source_node": null,
+            "success": true
+          }
+        ]
+      }
+    }
+  },
+  "success_count": 17,
+  "failed_count": 0,
+  "restored_satellites": [
+    "Satellite_1100_1_10",
+    "Satellite_1100_1_4",
+    "Satellite_1100_1_7",
+    "Satellite_1100_1_8",
+    "Satellite_1100_2_2",
+    "Satellite_1100_2_3",
+    "Satellite_1100_3_1",
+    "Satellite_1100_3_6",
+    "Satellite_1100_4_1",
+    "Satellite_1100_4_10",
+    "Satellite_1100_4_4",
+    "Satellite_1100_5_3",
+    "Satellite_1100_5_5",
+    "Satellite_1100_5_9",
+    "Satellite_1100_6_3",
+    "Satellite_1100_6_4",
+    "Satellite_1100_6_7"
+  ],
+  "kept_isolated_satellites": []
+}

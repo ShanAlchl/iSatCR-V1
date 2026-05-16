@@ -1,0 +1,162 @@
+ROUND_INDEX: 3
+TEST_ID: 37
+SCENARIO_JSON: {"ActionAttack_level": 0, "ConstellationConfig": 4, "DegradedEdgeRatio": 0.4133218623600097, "EdgeBandwidthDecreaseStd": 0.13218080325712817, "EdgeBandwidthMeanDecreaseRatio": 0.6094558569300093, "EdgeDisconnectRatio": 0.6094558569300093, "ExperiencePoolAttack_level": 2, "MeanIntervalTime": 17.23402134512398, "ModelTampAttack_level": 0, "PacketGenerationInterval": 3.5984501924811476, "PacketSizeMean": 100000000, "PacketSizeStd": 274582711, "PoissonRate": 43.62041396825993, "RewardAttack_level": 0, "StateObservationAttack_level": 0, "StateTransferAttack_level": 0}
+RAW_LOG_NAME: closed_loop_r003_t0037.txt
+
+====== step 10 ======
+====== 2026-05-14 10:36:48 ======
+PacketLossRate: 80.00%
+NetworkThroughput: 0.658 Mbps
+BandwidthUtilization: 0.00%
+AvgPacketNodeVisits: 2.500
+CumulativeReward: 0.845778
+AverageInferenceTime: 5.650 ms
+AverageE2eDelay: 0.260 seconds
+AverageHopCount: 2.000 hops
+AverageComputingRatio: 0.67%
+ComputingWaitingTime: 0.235 seconds
+AverageEndingReward: 0.9869981321324408
+AttackSummary: None
+====== step 20 ======
+====== 2026-05-14 10:36:49 ======
+PacketLossRate: 62.96%
+NetworkThroughput: 0.729 Mbps
+BandwidthUtilization: 0.07%
+AvgPacketNodeVisits: 3.233
+CumulativeReward: 6.207229
+AverageInferenceTime: 0.477 ms
+AverageE2eDelay: 0.715 seconds
+AverageHopCount: 4.500 hops
+AverageComputingRatio: 5.00%
+ComputingWaitingTime: 0.632 seconds
+AverageEndingReward: 0.9642718495259113
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_9, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_3_2, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_6_5, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_6_6, count=1
+====== step 30 ======
+====== 2026-05-14 10:36:49 ======
+PacketLossRate: 66.67%
+NetworkThroughput: 17.231 Mbps
+BandwidthUtilization: 0.09%
+AvgPacketNodeVisits: 3.538
+CumulativeReward: 6.708568
+AverageInferenceTime: 0.453 ms
+AverageE2eDelay: 0.843 seconds
+AverageHopCount: 4.333 hops
+AverageComputingRatio: 5.33%
+ComputingWaitingTime: 0.738 seconds
+AverageEndingReward: 0.9578598151020974
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_1_3, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_6_5, count=1
+====== step 40 ======
+====== 2026-05-14 10:36:50 ======
+PacketLossRate: 68.29%
+NetworkThroughput: 119.678 Mbps
+BandwidthUtilization: 0.15%
+AvgPacketNodeVisits: 3.564
+CumulativeReward: 6.283443
+AverageInferenceTime: 0.458 ms
+AverageE2eDelay: 0.897 seconds
+AverageHopCount: 3.923 hops
+AverageComputingRatio: 5.67%
+ComputingWaitingTime: 0.652 seconds
+AverageEndingReward: 0.8013194833532669
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_6, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_3_1, count=2
+====== step 50 ======
+====== 2026-05-14 10:36:50 ======
+PacketLossRate: 62.00%
+NetworkThroughput: 19.575 Mbps
+BandwidthUtilization: 0.12%
+AvgPacketNodeVisits: 3.812
+CumulativeReward: 7.470804
+AverageInferenceTime: 0.402 ms
+AverageE2eDelay: 0.694 seconds
+AverageHopCount: 3.895 hops
+AverageComputingRatio: 7.00%
+ComputingWaitingTime: 0.606 seconds
+AverageEndingReward: 0.9126633199458191
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_5, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_3_10, count=2
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_5_10, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_5_4, count=1
+====== step 60 ======
+====== 2026-05-14 10:36:51 ======
+PacketLossRate: 51.85%
+NetworkThroughput: 28.319 Mbps
+BandwidthUtilization: 0.11%
+AvgPacketNodeVisits: 3.789
+CumulativeReward: 12.018698
+AverageInferenceTime: 0.410 ms
+AverageE2eDelay: 0.968 seconds
+AverageHopCount: 3.731 hops
+AverageComputingRatio: 8.83%
+ComputingWaitingTime: 0.888 seconds
+AverageEndingReward: 0.951620362256874
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_3_1, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_4_1, count=2
+====== step 70 ======
+====== 2026-05-14 10:36:51 ======
+PacketLossRate: 63.64%
+NetworkThroughput: 102.496 Mbps
+BandwidthUtilization: 0.17%
+AvgPacketNodeVisits: 3.161
+CumulativeReward: 6.021304
+AverageInferenceTime: 0.449 ms
+AverageE2eDelay: 1.134 seconds
+AverageHopCount: 3.250 hops
+AverageComputingRatio: 5.67%
+ComputingWaitingTime: 0.877 seconds
+AverageEndingReward: 0.8599688761977555
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_1_2, count=2
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_3, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_4_1, count=1
+====== step 80 ======
+====== 2026-05-14 10:36:52 ======
+PacketLossRate: 72.97%
+NetworkThroughput: 11.283 Mbps
+BandwidthUtilization: 0.04%
+AvgPacketNodeVisits: 2.583
+CumulativeReward: 5.645515
+AverageInferenceTime: 0.438 ms
+AverageE2eDelay: 0.912 seconds
+AverageHopCount: 3.200 hops
+AverageComputingRatio: 4.17%
+ComputingWaitingTime: 0.855 seconds
+AverageEndingReward: 0.9543767941054309
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_4_5, count=1
+====== step 90 ======
+====== 2026-05-14 10:36:52 ======
+PacketLossRate: 50.00%
+NetworkThroughput: 16.238 Mbps
+BandwidthUtilization: 0.20%
+AvgPacketNodeVisits: 3.978
+CumulativeReward: 9.597268
+AverageInferenceTime: 0.386 ms
+AverageE2eDelay: 0.517 seconds
+AverageHopCount: 4.091 hops
+AverageComputingRatio: 5.67%
+ComputingWaitingTime: 0.433 seconds
+AverageEndingReward: 0.9286955942282448
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_1, count=1
+====== step 100 ======
+====== 2026-05-14 10:36:53 ======
+PacketLossRate: 33.33%
+NetworkThroughput: 40.500 Mbps
+BandwidthUtilization: 0.28%
+AvgPacketNodeVisits: 4.571
+CumulativeReward: 13.263478
+AverageInferenceTime: 0.394 ms
+AverageE2eDelay: 1.131 seconds
+AverageHopCount: 4.571 hops
+AverageComputingRatio: 10.17%
+ComputingWaitingTime: 0.977 seconds
+AverageEndingReward: 0.9196266833181665
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_1_3, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_1_4, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_2_9, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_3_1, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_4_1, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_6_4, count=1
+AttackSummary: type=ExperiencePoolAttack, satellite=Satellite_1100_6_7, count=1

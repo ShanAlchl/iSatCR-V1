@@ -1,0 +1,42 @@
+{
+  "target_field": "fused_score",
+  "sample_count": 129,
+  "round_count": 9,
+  "round_index_min": 0,
+  "round_index_max": 8,
+  "target_min": 0.0,
+  "target_max": 0.9975318908691406,
+  "target_mean": 0.09003725919464278,
+  "target_unique_count": 48,
+  "target_zero_count": 82,
+  "fail_score_min": 0.0,
+  "fail_score_max": 0.9975318908691406,
+  "fail_score_mean": 0.09003725919464278,
+  "fail_score_unique_count": 48,
+  "sample_preview": [
+    {
+      "round_index": 0,
+      "test_id": 1,
+      "fail_score": 0.0,
+      "total_membership_v2": 0.24243892955304522,
+      "decision_score_v2": 0.11407451644320021,
+      "terminal_risk_score": 0.006518281962732209
+    },
+    {
+      "round_index": 1,
+      "test_id": 2,
+      "fail_score": 0.0,
+      "total_membership_v2": 0.42561199118437054,
+      "decision_score_v2": 0.22171335230621575,
+      "terminal_risk_score": 0.38328874889310843
+    },
+    {
+      "round_index": 1,
+      "test_id": 3,
+      "fail_score": 0.0,
+      "total_membership_v2": 0.28001763423352366,
+      "decision_score_v2": 0.17896074030782724,
+      "terminal_risk_score": 0.13385267166200385
+    }
+  ]
+}
